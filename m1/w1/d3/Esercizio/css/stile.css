@@ -55,11 +55,29 @@ main hr{
 }
 main h3{
     text-align: left;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 main mark{
     background-color:#027794;
     color: white;
+}
+main ul{
+    text-align: justify;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+}
+main dt{
+    text-align: left;
+    
+}
+main dd{
+    text-align: left;
+    margin-left: 25px;
 }
 
 /* ELEMENTI NEL MAIN */
@@ -92,3 +110,21 @@ blockquote p{
 
 
 /* FOOTER */
+footer {
+    font-size: 0.9rem;
+    background-color: #353535;
+    text-align: center;
+    border-top: 5px solid #027794;
+    color:white;
+    line-height: 30px;
+}
+
+footer p small{
+    color: grey;
+    font-size: 0.8rem;
+}
+footer kbd{
+    color: yellow;
+    font-style: italic;
+    font-weight: 600;
+}
