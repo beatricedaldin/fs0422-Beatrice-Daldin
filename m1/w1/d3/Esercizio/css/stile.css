@@ -1,0 +1,94 @@
+/* IMPOSTAZIONI GENERALI */
+html{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20 px;
+}
+
+/* HEADER */
+header{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #2596be;
+    text-transform: uppercase;
+    
+}
+header h1{
+    color:white;
+    
+}
+header h1 span{
+    color:#2596be;
+    background-color: white;
+}
+header h2{
+    font-size: 1rem;
+
+}
+header h2 span{
+    font-size: 1.5rem;
+}
+#primo-hr{
+    border: 0; border-top: 5px solid #027794;
+
+
+}
+
+/* MAIN */
+main{
+    line-height: 30px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+main b{
+    font-weight: bold;
+}
+main p{
+    text-align: left;
+}
+main strong{
+    color: #2596be;
+}
+main hr{
+    border: 1px dashed black;
+    border-style: none none dashed; 
+}
+main h3{
+    text-align: left;
+    font-weight: bold;
+}
+main mark{
+    background-color:#027794;
+    color: white;
+}
+
+/* ELEMENTI NEL MAIN */
+.main-h2{
+    font-size: 2rem;
+    font-weight:500;
+    text-transform: uppercase;
+    color: #027794;
+}
+address{
+    text-align: left;
+}
+a{
+    color: red;
+    font-weight: 300;
+}
+figure img {
+    border: 1px solid lightgrey;
+    padding: 10px 10px 10px 10px;
+}
+
+blockquote p{
+    font-style: italic;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid lightgrey;
+    background-color: lightgrey;
+}
+
+
+
+/* FOOTER */
