@@ -1,15 +1,215 @@
-/* IMPOSTAZIONI GENERALI */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/sfondo.png);
+    background-size: auto;
+    margin: 15px;
+
+    line-height: 25px;
+    
+}
+
+hr{
+    opacity: 0;
+}
 
 /* HEADER */
+header{ 
+    text-align: center;
+    background-image: linear-gradient(#27adcf, #046788);
+    padding: 30px;
+    text-transform: uppercase;
+    font-weight:600;
+    box-shadow: 0px 5px 10px black;
+    
+    
+    
+}
+header p{
+    color: white;
+    padding: 20px;
+   
+}
+header nav li{
+    list-style-type:none;
+    color: white;
+}
+header nav li::before{
+    content:'⇒';
+    color: white;
+    padding: 5px;
+}
+header nav li::after{
+    content: '⇐';
+    color: white;
+    padding: 5px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
 
 /* MAIN */
+main{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 1px 5px 10px black;
+    text-align: left;
+}
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+main article h1{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 40px;   
+    margin-bottom: 25px;
+}
+
+
+
+main p{
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+main code{
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+main strong{
+    color: #aa2072;
+    font-weight: 600;
+}
+main ul,ol{
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+main a{
+    color: #009bc5;
+}
+iframe{
+    border-radius: 15px;
+    width: 100%;
+    height: 210px;
+}
+#dopotab{
+    margin-top: 20px;
+}
+main .subtitle{
+    color: grey;
+}
+
+
+
 
 /* TABELLE */
 
+table caption{
+    font-weight: 600;
+    font-style: italic;
+}
+table thead{
+    background-color: #3769cc;
+    height: 60px;
+    
+}
+table th{
+    padding: 20px;
+    color: white;
+
+    
+}
+table th:nth-last-of-type(even){
+    border-left: 1px solid #637ed7;
+    border-right: 1px solid #637ed7;
+}
+table{
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid #3769cc;
+}
+table tr{
+    height: 50px;
+    
+}
+table tr td{
+    text-align: center;
+    padding:15px;
+}
+table tr:nth-last-of-type(even){
+    background-color: #efefef;
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+
 /* FORM */
 
+section{
+    margin-top: 20px;
+    background-color: #e5dee0;
+    padding: 20px;
+    
+}
+section h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+section p{
+    margin-bottom: 25px;
+}
+fieldset input{
+    width: 70%;
+    border-bottom:1px dashed black;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    height: 25px;
+    
+}
+fieldset button{
+    width: 20%;
+    border:0px;
+    background-color: #4969bc;
+    color: white;
+    font-weight: 600;
+    height: 25px;
+}
+
 /* ELEMENTI NELL' ASIDE */
+aside h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 35px;
+    margin-top: 35px;
+
+}
+aside div{
+    background-color: #e3e7e8;
+    border: 1px solid grey;
+    margin-top:20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+aside div a{
+    font-weight: 600;
+}
+aside div #articolodata{
+    text-align: right;
+}
 
 /* FOOTER */
+
+footer{
+    background-image: linear-gradient(#005566,#313a38);
+    color: white;
+    padding: 20px;
+}
+footer p{
+    margin-bottom: 20px;
+}
+footer a{
+    color: #ef1bce;
+    font-weight: 600;
+}
