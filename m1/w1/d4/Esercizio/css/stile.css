@@ -95,7 +95,7 @@ iframe{
 #dopotab{
     margin-top: 20px;
 }
-main .subtitle{
+h1+p{
     color: grey;
 }
 
@@ -195,7 +195,7 @@ aside div{
 aside div a{
     font-weight: 600;
 }
-aside div #articolodata{
+aside div .articolodata{
     text-align: right;
 }
 
