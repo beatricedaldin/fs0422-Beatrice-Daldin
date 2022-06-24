@@ -27,6 +27,7 @@ h2{
 
 img{
     max-width: 100%;
+
     
 }
 p{
@@ -87,14 +88,14 @@ main #orangebutton{
 main .imgtonda{
     border-radius: 50%;
     text-align: center;
-    width: 60%;
+    width: 300px;
 }
 main #centrale{
     padding-bottom: 50px;
 }
 main #finale{
     background-color: #e22d0e;
-    width: 100vw;
+    
     color: white;
     padding-bottom: 30px;
     padding-top: 30px;
