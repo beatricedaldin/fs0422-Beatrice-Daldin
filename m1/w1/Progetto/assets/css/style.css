@@ -1,0 +1,183 @@
+/* GENEALE */
+
+body{
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65em;
+    text-align: center;
+    
+    
+}
+h1{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    
+    
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+img{
+    max-width: 100%;
+    
+}
+p{
+    margin-left: 58px;
+    margin-right: 58px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/* HEADER */
+header #bgblack{
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    padding: 30px;
+    
+   
+}
+
+
+
+
+
+/* MAIN */
+main #menuiniziale{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 45px;
+
+    
+
+}
+h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 50px 50px 20px 50px;
+
+}
+main #orangebutton{
+    color: white;
+    background-color: #f04c2f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 150px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+main .imgtonda{
+    border-radius: 50%;
+    text-align: center;
+    width: 60%;
+}
+main #centrale{
+    padding-bottom: 50px;
+}
+main #finale{
+    background-color: #e22d0e;
+    width: 100vw;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+#finale h2{
+    font-size: 2rem;
+    color: white;
+    
+
+}
+#finale p{
+    padding-bottom: 30px;
+}
+#finale em{
+    display: block;
+    line-height: 1.65rem;
+    font-style: italic;
+    font-size: 1rem;
+    
+   
+    
+}
+#finale span{
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.65rem;
+}
+
+
+
+
+
+/* ASIDE */
+aside>figure{
+    border: 1px solid #dee1e3;
+    border-radius: 0px 0px 6px 6px;
+    margin: 30px;
+    
+}
+aside figcaption{
+    padding-bottom: 30px;
+    
+}
+aside figcaption p{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+        background-color: #25a2c3;
+        color: #c8e7f0;
+        padding-bottom: 50px;
+}
+footer address{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+footer p{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+footer a{
+    color: #c8e7f0;
+}
+footer h2{
+    padding-top: 40px;
+    font-size: 2rem;
+    color: white;
+}
+footer hr{
+    width: 45%;
+    margin-bottom: 20px;
+
+    
+}
+footer  small{
+    font-size: 0.8rem;
+    
+    
+}
