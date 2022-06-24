@@ -95,7 +95,6 @@ main #centrale{
 }
 main #finale{
     background-color: #e22d0e;
-    
     color: white;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -130,10 +129,12 @@ main #finale{
 
 
 /* ASIDE */
+
+/*Le immagini in aside sono responsive fino alla loro grandezza originale*/
 aside>figure{
     border: 1px solid #dee1e3;
     border-radius: 0px 0px 6px 6px;
-    margin: 30px;
+    margin: 10%;
     
 }
 aside figcaption{
