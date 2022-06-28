@@ -66,7 +66,14 @@ header nav li a::before {
     content: "\22c6\0020";
 }
 
-/*  BUTTONS */
+/*  RIGHTBUTTONS */
+#rightbuttons .top a{
+    color: #b78c95;
+
+}
+#rightbuttons .social a{
+    color: #2965c0;
+}
 
 
 
