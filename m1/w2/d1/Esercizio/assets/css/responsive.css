@@ -242,3 +242,9 @@ body{
     margin-right: 25px;
 }
 }
+
+@media print {
+    header, iframe, footer, #formcont, aside, .social, .toTop{
+        display: none;
+    }
+}
