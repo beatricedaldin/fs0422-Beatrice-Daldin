@@ -34,8 +34,11 @@ header {
     margin-bottom: 1.5em;
     padding: 2em 1.5em;
     position: sticky;
+    top: 0;
+    z-index: 5;
 
-    
+
+
 }
 
 header div img {
@@ -43,23 +46,30 @@ header div img {
 }
 
 header nav ul {
+
     margin: 0;
 }
 
 header nav li {
     list-style: none;
     display: inline-block;
-    margin-right: 10px;
-    
+    padding: 0 10px;
+
+
+
+
 }
 
 header nav li a {
     color: white;
     text-decoration: none;
+
+
+
 }
 
 header nav li a:hover {
-    color: red;
+    background-color: red;
 }
 
 header nav li a::before {
@@ -67,13 +77,36 @@ header nav li a::before {
 }
 
 /*  RIGHTBUTTONS */
-#rightbuttons .top a{
-    color: #b78c95;
+
+.top a, .social a{
+    font-size: 4.5rem;
+    height: 4.5rem;
 
 }
-#rightbuttons .social a{
-    color: #2965c0;
+.top a i, .social a i{
+    background: white;
 }
+
+.top a {
+    color: #b78c95;
+    position: fixed;
+    right: 0px;
+    bottom: 5vh;
+
+}
+
+.social a {
+    color: #2965c0;
+    position: fixed;
+    right: 0px;
+    bottom: 30vh;
+
+
+}
+.social .facebooksquare{
+    bottom: 40vh;
+}
+
 
 
 
@@ -107,8 +140,9 @@ h1 {
     letter-spacing: -0.03em;
     margin-bottom: 0.7em;
 }
-.badgeleft{
-    
+
+.badgeleft {
+
     float: left;
     border: 5px solid #00a5c7;
     outline: 5px solid #aa2277;
@@ -193,7 +227,7 @@ tbody tr:last-of-type {
 }
 
 /* FORM */
-main #form .formcaption{
+main #form .formcaption {
     border: 0;
     height: 35px;
     width: 130px;
@@ -206,6 +240,7 @@ main #form .formcaption{
     box-shadow: 2px 2px 2px 0px #707073;
     margin-bottom: 0px;
 }
+
 input {
     padding: 5px;
     border: 0;
