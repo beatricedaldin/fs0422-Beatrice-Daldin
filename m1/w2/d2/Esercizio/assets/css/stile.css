@@ -196,6 +196,7 @@ iframe {
     height: auto;
     margin-bottom: 2em;
     border-radius: 20px;
+    visibility: hidden;
 }
 
 /* TABELLE */
