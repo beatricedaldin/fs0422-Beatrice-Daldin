@@ -32,8 +32,8 @@
 
     <hr>
 
-    <main>
-        <article class="clearfix">
+    <main id="container">
+        <article  class="gridtemplate">
             <h1>Come creare un template per i post</h1>
             <p><i class="fas fa-pen-square"></i> di Mario Rossi - <span><i class="fas fa-clock"></i> pubblicato il
                     25-10-2020</span></p>
@@ -107,26 +107,14 @@
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
+           </article>
 
-            <section>
-                <h2>Novità</h2>
-                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
-
-                <form method="POST" action="elabora_form.php">
-                    <fieldset>
-                        <input type="email" name="user_email" id="user_email" placeholder="inserisci l'email" required>
-                        <button type="submit">Iscriviti!</button>
-                    </fieldset>
-                </form>
-            </section>
-
-        </article>
-
-        <aside>
+           <aside class="gridtemplate">
             <h2>Articoli correlati</h2>
             <div>
                 <a href="post2.html"
-                    title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il codice
+                    title="Passaggi guidati per validare correttamente tutto il codice sviluppato">Validare il
+                    codice
                     HTML</a>
                 <p><i class="fas fa-tag"></i> Categoria: develop</p>
                 <p><i class="fas fa-calendar-alt"></i> Data: 18-9-2020</p>
@@ -146,12 +134,30 @@
                 <p><i class="fas fa-tag"></i> Categoria: ottimizzazione</p>
                 <p><i class="fas fa-calendar-alt"></i> Data: 30-9-2020</p>
             </div>
+            <section class="gridtemplate">
+                <h2>Novità</h2>
+                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+    
+                <form method="POST" action="elabora_form.php">
+                    <fieldset>
+                        <input type="email" name="user_email" id="user_email" placeholder="inserisci l'email"
+                            required>
+                        <button type="submit">Iscriviti!</button>
+                    </fieldset>
+                </form>
+            </section>
         </aside>
+
+
+
+
+        
     </main>
+
 
     <hr>
 
-    <footer>
+    <footer class="gridtemplate">
         <p>Blog Epicode &copy;2021</p>
         <address>Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 - Milano. P.IVA
             00112233. <a href="mailto:info@epicode.school"
