@@ -374,7 +374,7 @@ aside #flexother div p:last-child {
     }
 
     aside #flexother div {
-        flex-grow: 1;
+        flex: 1;
         /*  width:31% e tolto il gap*/
     }
 }
