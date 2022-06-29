@@ -369,7 +369,7 @@ aside #flexother div p:last-child {
     aside #flexother {
         display: flex;
         justify-content: space-between;
-        gap: 5px;
+        gap: 10px;
 
     }
 
@@ -387,9 +387,9 @@ aside #flexother div p:last-child {
 
     }
 
-    aside #flexother div {
+   /* aside #flexother div {
         width: 100%;
-    }
+    } usato con width 31%*/
 }
 
 
