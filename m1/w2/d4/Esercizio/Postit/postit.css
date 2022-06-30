@@ -20,7 +20,7 @@ h2{
     height: 20vh;
     width: 20vw;
     box-shadow: 3px 3px 10px black;
-
+    
 }
 
 
@@ -65,13 +65,10 @@ h2{
     justify-content: center;
     align-content: center;
     height: 100vh;
-    gap: 30px;
+    gap: 35px;
 }
 #board div{
-    height: 30vh;
-    margin-bottom: 20px;
-    
-   
+    height: 30vh; 
    
 }
 
@@ -107,10 +104,29 @@ h2{
 
 
 /* ANIMATIONS */
+
 #board{
-    perspective: 100%;
+    perspective: 500px;
+}
+#board div{
+    transition: transform 0.3s;
+}
+
+#board div:hover{
+    transform: scale(1.2) rotate(0deg);
+    z-index: 1;
+
 }
 
 #board .yellow{
-    transform: rotateZ(30 deg);
+    transform: rotate(-5deg);
 }
+#board .green{
+    transform: rotate(5deg);
+}
+#board .violet{
+    transform: rotate(-7deg);
+}
+
+
+
