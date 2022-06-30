@@ -1,0 +1,116 @@
+body{
+    background-color: #666666;
+    height: 100%;
+}
+
+h2, p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3rem;
+
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+#board div{
+    
+
+    height: 20vh;
+    width: 20vw;
+    box-shadow: 3px 3px 10px black;
+
+}
+
+
+/* YELLOW */
+
+#board .yellow{
+    background-image: linear-gradient(#ffffcd, #bdbda3);
+}
+
+
+
+
+
+
+
+/* GREEN */
+
+#board .green{
+    background-image: linear-gradient(#ccfece, #9eb5a1);
+}
+
+
+
+
+
+
+/* VIOLET */
+
+#board .violet{
+    background-image: linear-gradient(#c9c9f7, #8b8c9b);
+}
+
+
+
+
+
+/* FLEXBOX  */
+
+#board{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    gap: 30px;
+}
+#board div{
+    height: 30vh;
+    margin-bottom: 20px;
+    
+   
+   
+}
+
+
+
+
+
+
+
+/* GRID, no responsive */
+
+#board div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#board div h2{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+#board div p{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+
+
+
+/* ANIMATIONS */
+#board{
+    perspective: 100%;
+}
+
+#board .yellow{
+    transform: rotateZ(30 deg);
+}
