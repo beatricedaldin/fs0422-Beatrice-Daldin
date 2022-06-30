@@ -45,6 +45,7 @@ p,i{
 	animation-name: nomeAnimazione;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+	animation-timing-function: linear;
 }
 #parole i:nth-child(2) {
     animation-delay: 2s;
