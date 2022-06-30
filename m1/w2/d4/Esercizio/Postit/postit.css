@@ -1,32 +1,34 @@
-body{
+body {
     background-color: #666666;
     height: 100%;
 }
 
-h2, p{
+h2,
+p {
     font-family: 'Indie Flower', cursive;
     font-size: 1.3rem;
 
 }
-h2{
+
+h2 {
     font-size: 2rem;
     font-weight: bold;
 
 }
 
-#board div{
-    
+#board div {
+
 
     height: 20vh;
     width: 20vw;
     box-shadow: 3px 3px 10px black;
-    
+
 }
 
 
 /* YELLOW */
 
-#board .yellow{
+#board .yellow {
     background-image: linear-gradient(#ffffcd, #bdbda3);
 }
 
@@ -38,7 +40,7 @@ h2{
 
 /* GREEN */
 
-#board .green{
+#board .green {
     background-image: linear-gradient(#ccfece, #9eb5a1);
 }
 
@@ -49,7 +51,7 @@ h2{
 
 /* VIOLET */
 
-#board .violet{
+#board .violet {
     background-image: linear-gradient(#c9c9f7, #8b8c9b);
 }
 
@@ -59,7 +61,7 @@ h2{
 
 /* FLEXBOX  */
 
-#board{
+#board {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -67,9 +69,10 @@ h2{
     height: 100vh;
     gap: 35px;
 }
-#board div{
-    height: 30vh; 
-   
+
+#board div {
+    height: 30vh;
+
 }
 
 
@@ -80,19 +83,20 @@ h2{
 
 /* GRID, no responsive */
 
-#board div{
+#board div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
 
-#board div h2{
+#board div h2 {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-#board div p{
+
+#board div p {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 3;
@@ -105,28 +109,28 @@ h2{
 
 /* ANIMATIONS */
 
-#board{
+#board {
     perspective: 500px;
 }
-#board div{
+
+#board div {
     transition: transform 0.3s;
 }
 
-#board div:hover{
+#board div:hover {
     transform: scale(1.2) rotate(0deg);
     z-index: 1;
 
 }
 
-#board .yellow{
+#board .yellow {
     transform: rotate(-5deg);
 }
-#board .green{
+
+#board .green {
     transform: rotate(5deg);
 }
-#board .violet{
+
+#board .violet {
     transform: rotate(-7deg);
 }
-
-
-
