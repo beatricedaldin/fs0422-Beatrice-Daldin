@@ -1,0 +1,36 @@
+
+ .name, #contattaci>.email, #messaggio, #areaditesto{
+    width: 80vw;
+    margin-bottom: 15px;
+ }
+ .name, .email{
+   height: 5vh;
+ }
+
+ #contattaci #areaditesto{
+   display: block;
+   height: 10vh;
+   margin: 0 auto;
+ }
+#contattaci>input[type=submit]{
+   margin-top: 15px;
+}
+h2{
+   padding-top: 25px;
+   padding-bottom: 0px;
+}
+
+#address>h3{
+   padding-bottom: 0;
+}
+#address span{
+   display: block;
+}
+
+
+
+ 
+ 
+ 
+ 
+
