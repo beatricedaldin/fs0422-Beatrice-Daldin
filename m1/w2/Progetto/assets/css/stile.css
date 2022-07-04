@@ -7,7 +7,6 @@ body {
     text-align: center;
 }
 
-
 h1,
 h2,
 h3 {
@@ -23,10 +22,10 @@ h2 {
     padding-bottom: 20px;
 }
 
-h3,caption {
+h3,
+caption {
     font-size: 3rem;
 }
-
 
 i {
     color: #e42424;
@@ -34,14 +33,16 @@ i {
 }
 
 input[type=submit],
-button, #animationbutton {
+button,
+#animationbutton {
     color: white;
     font-size: 1.2rem;
     border: 0;
     background-image: linear-gradient(to right, #6cc1e2, #392f7a);
     padding: 10px;
 }
-#animationbutton{
+
+#animationbutton {
     margin-top: 10px;
     height: 30px;
     width: 100px;
@@ -52,12 +53,13 @@ footer {
 }
 
 #secondflex img {
-   
+
     max-width: 400px;
-    
-    
+
+
 }
-#fourthflex img{
+
+#fourthflex img {
     max-width: 640px;
 }
 
@@ -65,7 +67,8 @@ a {
     text-decoration: none;
     color: black;
 }
-li{
+
+li {
     list-style: none;
 }
 
@@ -73,32 +76,34 @@ a,
 label,
 button,
 input[type="submit"],
-input[type="checkbox"], 
+input[type="checkbox"],
 #sottomenu>li:hover {
     cursor: pointer;
 }
+
 section {
     padding: 35px 20px;
 
 }
-div, form, p, figure, address{
+
+div,
+form,
+p,
+figure,
+address {
     padding: 10px 0;
 }
-#menu img{
+
+#menu img {
     max-height: 40px;
     max-width: 130px;
 }
 
 
 
-
-
-
-
-
-
 /* HEADER */
-#menu{
+
+#menu {
     position: sticky;
     box-shadow: 0px 1px 10px #a19ca2;
     top: 0;
@@ -108,15 +113,17 @@ div, form, p, figure, address{
     justify-content: space-between;
     background-color: white;
 }
-#menu>img{
+
+#menu>img {
     order: 1;
-    
+
 }
-label{
+
+label {
     order: 3;
 }
 
-#sottomenu{
+#sottomenu {
     order: 2;
     overflow: hidden;
     height: 0;
@@ -127,48 +134,47 @@ label{
     background-color: white;
     width: 100vw;
 }
-#ics{
+
+#ics {
     display: none;
 }
-#toggle{
+
+#toggle {
     display: none;
 }
-#menu #sottomenu>li:hover{
+
+#menu #sottomenu>li:hover {
     background-color: #d3d3d3;
 }
+
 input[type="checkbox"]:checked~#sottomenu {
     display: block;
     height: 275px;
 }
 
-input[type="checkbox"]:checked~#ics{
+input[type="checkbox"]:checked~#ics {
     display: block;
 }
-input[type="checkbox"]:checked~#dots{
+
+input[type="checkbox"]:checked~#dots {
     display: none;
 }
 
 #sottomenu li {
     padding: 20px;
-     }
-#sottomenu .button{
+}
+
+#sottomenu .button {
     background-image: linear-gradient(to right, #6cc1e2, #392f7a);
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
 /* MAIN */
-#bgimage, #animationbutton>a{
+
+#bgimage,
+#animationbutton>a {
     color: white;
     text-shadow: 1px 1px 1px black;
 
@@ -181,39 +187,42 @@ input[type="checkbox"]:checked~#dots{
     background-position: center;
     background-size: cover;
     text-align: left;
-    
+
 }
 
 h1 {
     font-size: 3rem;
 }
+
 h1 span {
     display: block;
     text-transform: uppercase;
 }
-#animationbutton{
+
+#animationbutton {
     animation-name: nomeanimazione;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     position: relative;
-    
+
 }
+
 @keyframes nomeanimazione {
-    
-0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-}
 
-70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-}
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
 
-100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-}
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
 }
 
 h2 {
@@ -222,24 +231,26 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
-     padding-bottom: 20px;
+    padding-bottom: 20px;
 }
 
-#section1 span{
+#section1 span {
     display: block;
 }
 
 #scrivici {
     background-color: #0c0633;
     color: white;
-    
-   
+
+
 }
-#scrivici .center2{
-   padding-top: 50px;
-   padding-bottom: 50px;
+
+#scrivici .center2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-#secondflex dt{
+
+#secondflex dt {
     padding-top: 15px;
 }
 
@@ -247,7 +258,8 @@ h3 {
     font-size: 1.5rem;
 
 }
-.radiusimage{
+
+.radiusimage {
     border-radius: 5px;
     width: 80vw;
 }
@@ -261,35 +273,37 @@ h3 {
 
 
 
-
-
-
 /* FOOTER */
 
 
 #thirdflex {
     text-align: left;
 }
-footer>h3{
+
+footer>h3 {
     padding-top: 20px;
 }
 
-#footerform>input[type=submit]{
+#footerform>input[type=submit] {
     height: 8vh;
     width: 88vw;
-    
+
 }
-#footerform>input[type=email]{
+
+#footerform>input[type=email] {
 
     width: 86.5vw;
     height: 6vh;
 }
-small{
+
+small {
 
     font-size: 0.9rem;
-   
-   
+
+
 }
-.email:invalid + #newsletter, .email:invalid ~#messaggio {
+
+.email:invalid+#newsletter,
+.email:invalid~#messaggio {
     text-decoration: line-through;
 }

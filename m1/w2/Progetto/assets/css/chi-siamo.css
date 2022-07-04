@@ -1,126 +1,148 @@
 /*    TABELLA   */
 
-#primatabella{
-   margin: 25px;
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-template-rows: repeat(9, 1fr);
+#primatabella {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
 
 }
-#uno{grid-column-start: 1;
+
+#uno {
+    grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-#due{
+
+#due {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
-#tre{
+
+#tre {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-#quattro{
+
+#quattro {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-#cinque{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;  
+
+#cinque {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
-#sei{
-        grid-column-start: 2;
-        grid-column-end: 4;
-        grid-row-start: 3;
-        grid-row-end: 4;
+
+#sei {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
-#sette{
+
+#sette {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-#otto{
+
+#otto {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
 }
-#nove{
+
+#nove {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
 }
-#dieci{
+
+#dieci {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 6;
 }
-#undici{
+
+#undici {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 6;
     grid-row-end: 7;
 }
-#dodici{
+
+#dodici {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 7;
 }
-#tredici{
+
+#tredici {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 7;
     grid-row-end: 8;
 }
-#quattordici{
+
+#quattordici {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 7;
     grid-row-end: 8;
 }
-#quindici{
+
+#quindici {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 8;
     grid-row-end: 9;
 }
-#sedici{
+
+#sedici {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 8;
     grid-row-end: 9;
 }
-#diciasette{
+
+#diciasette {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 9;
     grid-row-end: 10;
 }
-#diciotto{
+
+#diciotto {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 9;
     grid-row-end: 10;
 }
-.blue{
+
+.blue {
     background-color: #d2dce7;
 }
-#primatabella p:nth-child(odd){
+
+#primatabella p:nth-child(odd) {
     font-weight: bold;
 }
-#primatabella{
+
+#primatabella {
     text-align: left;
 }
 
@@ -129,14 +151,15 @@
 
 
 /* MAIN */
-#secondatabella{
+#secondatabella {
     display: none;
 }
 
 
-#fourthflex img{
+#fourthflex img {
     width: 100%;
 }
-h2{
+
+h2 {
     padding-bottom: 20px;
 }
