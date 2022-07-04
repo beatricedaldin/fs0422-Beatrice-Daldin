@@ -46,7 +46,7 @@
     #sottomenu .button a {
         color: white;
     }
-}
+
 
 
 /* FLEX */
@@ -177,6 +177,8 @@ br {
     border-left: 1px solid #7190ad;
     border-right: 1px solid #7190ad;
 }
+}
+
 
 
 
