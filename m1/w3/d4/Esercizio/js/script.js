@@ -1,26 +1,23 @@
+// Upper e Lower Case
 let frase = "Giovanni è innamorato di Lucia"
 
 console.log(frase.toLowerCase())
 console.log(frase.toUpperCase())
 
 
-
+//Dividere la stringa in lettere, prendere due lettere e fare una nuova stringa
 let coso = frase.split("")
 console.log(coso)
-let primaLettera = coso[5]
-let secondaLettera = coso[13]
+let primaLettera = coso[Math.floor(Math.random() * frase.length)]
+let secondaLettera = coso[Math.floor(Math.random() * frase.length)]
 let nuovaParola = primaLettera + secondaLettera
 console.log(nuovaParola)
 
 
 
-let cosa = frase.split(" , ")
-console.log(cosa)
 
 
-
-
-
+// Crea un array di persone, seleziono il terzo valore, output lunghezza array, aggiungo persona alla fine dell'array
 let lista = 
 [ 'Massimo', 'Teresa', 'Matteo', 'Igor', 'Irene', 'Marco' ]
 console.log(lista)
@@ -32,7 +29,7 @@ console.log(lista)
 
 
 
-
+//Funzione, lista di numeri, prendo due numeri e faccio un monte di operazioni
 function operazioni(){
         let lista2 = [ 1, 2, 3, 4 ]
         let a = lista2[Math.floor(Math.random() * lista2.length)]
@@ -57,6 +54,7 @@ operazioni()
 
 
 
+//Usare pop, push, shift, unshift applicato ad un array
 
 let cose = ['borsa', 'borsello', 'fiori', 'giornale', 'ombrello']
 
