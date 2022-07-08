@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c87d722927.js" crossorigin="anonymous"></script>
     <title>Calcolatrice</title>
 </head>
+
 <body>
-    
-<div id="calcolatrice">
-<input type="text" placeholder="0" id="display">
-<div id="pulsanti">
-    <button id="reset">Reset</button>
-    <button>(</button>
-    <button>)</button>
-    <button>.</button>
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
-    <button>+</button>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>-</button>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>/</button>
-    <button>0</button>
-</div>
+    <div id="center">
+
+        <div id="calcolatrice">
+            <input type="text" placeholder="0" id="display" readonly>
+
+            <input type="button" id="reset" class="bottone" value="Reset" onclick="cleanUp()">
+            <button id="canc" class="bottone tesseract" onclick="del()"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button class="bottone grassetto" data-symb="(" onclick="addSymb(this)">(</i></button>
+            <button class="bottone grassetto" data-symb=")" onclick="addSymb(this)">)</button>
+            <button class="bottone grassetto" data-symb="**" onclick="addSymb(this)">^</button>
+            <button class="bottone" data-symb="&#8730;" onclick="addSymb(this);root()"><i
+                    class="fa-solid fa-square-root-variable"></i></button>
+            <button class="bottone" data-symb="1" onclick="addSymb(this)">1</button>
+            <button class="bottone" data-symb="2" onclick="addSymb(this)">2</button>
+            <button class="bottone" data-symb="3" onclick="addSymb(this)">3</button>
+            <button class="bottone" data-symb="+" onclick="addSymb(this)"><i class="fa-solid fa-plus"></i></button>
+            <button class="bottone" data-symb="4" onclick="addSymb(this)">4</button>
+            <button class="bottone" data-symb="5" onclick="addSymb(this)">5</button>
+            <button class="bottone" data-symb="6" onclick="addSymb(this)">6</button>
+            <button class="bottone" data-symb="-" onclick="addSymb(this)"><i class="fa-solid fa-minus"></i></button>
+            <button class="bottone" data-symb="7" onclick="addSymb(this)">7</button>
+            <button class="bottone" data-symb="8" onclick="addSymb(this)">8</button>
+            <button class="bottone" data-symb="9" onclick="addSymb(this)">9</button>
+            <button class="bottone" data-symb="/" onclick="addSymb(this)"><i class="fa-solid fa-divide"></i></button>
+            <button class="bottone grassetto" data-symb="." onclick="addSymb(this)">.</button>
+            <button class="bottone" data-symb="0" onclick="addSymb(this)">0</button>
+            <button class="bottone" onclick="result()"><i class="fa-solid fa-equals"></i></button>
+            <button class="bottone" data-symb="*" onclick="addSymb(this)"><i class="fa-solid fa-xmark"></i></button>
 
 
-</div>
+
+        </div>
+
+    </div>
 
 
-
-
-<script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

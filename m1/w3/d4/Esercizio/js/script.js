@@ -54,6 +54,7 @@ operazioni()
 
 
 
+
 //Usare pop, push, shift, unshift applicato ad un array
 
 let cose = ['borsa', 'borsello', 'fiori', 'giornale', 'ombrello']
