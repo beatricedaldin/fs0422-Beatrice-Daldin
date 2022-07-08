@@ -9,6 +9,7 @@
     justify-content: center;
     align-content: center;
     
+    
 }
 
 input, .bottone{
@@ -44,6 +45,10 @@ input, .bottone{
     cursor: pointer;
     
 
+}
+.bottone:hover{
+    background-image: linear-gradient(black, black);
+    color: white;
 }
 .grassetto{
     font-weight: bold;
