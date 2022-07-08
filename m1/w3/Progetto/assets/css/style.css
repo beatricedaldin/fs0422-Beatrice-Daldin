@@ -1,6 +1,12 @@
 /* GENERALE */
 
-
+.bg {
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
 
 #center{
     height: 100vh;
@@ -8,7 +14,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    
+
     
 }
 
