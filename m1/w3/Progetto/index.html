@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
@@ -17,9 +18,14 @@
 
 <body>
     
-<div class="bg">
-    <div id="center">
 
+    <div id="center">
+    </div>
+    <div class="star-field">
+    <div class="layer"></div>
+    <div class="layer"></div>
+    <div class="layer"></div>
+    
     <div id="calcolatrice">
         <input type="text" placeholder="0" id="display" readonly>
 
@@ -46,12 +52,7 @@
         <button class="bottone" data-symb="0" onclick="addSymb(this)">0</button>
         <button class="bottone" onclick="result()"><i class="fa-solid fa-equals"></i></button>
         <button class="bottone" data-symb="*" onclick="addSymb(this)"><i class="fa-solid fa-xmark"></i></button>
-
-
-
     </div>
-
-</div>
 </div>
 
     
