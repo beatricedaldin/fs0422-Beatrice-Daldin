@@ -128,7 +128,6 @@ label {
     overflow: hidden;
     height: 0;
     transition: height 0.5s ease-in;
-    position: fixed;
     right: 30px;
     top: 70px;
     background-color: white;
