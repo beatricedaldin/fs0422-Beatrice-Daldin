@@ -1,60 +1,79 @@
-let date = new Date();
-date.toLocaleDateString()
-console.log(date)
+let data = new Date()
 
-let dataCompleta = document.querySelector('#dataCompleta')
-dataCompleta.innerHTML = date
+// metodo 1
 
-let soloData = document.querySelector('#soloData')
-soloData.innerHTML = date.toLocaleDateString()
-
-let soloOra = document.querySelector('#soloOra')
-soloOra.innerHtml = date.toLocaleTimeString()
-console.log(soloOra.innerHtml)
-
-let giorno = document.querySelector('#giorno')
-giorno.innerHTML = date.getDate()
-
-let mese = document.querySelector('#mese')
-mese.innerHTML = date.getMonth()
-
-let anno = document.querySelector('#anno')
-anno.innerHTML = date.getFullYear()
-
-let nomeGiorno = document.querySelector('#nomeGiorno')
-
-if (date.getDay = 0){
-    nomeGiorno.innerHTML = 'Domenica'
-} else if (date.getDay = 1){
-    nomeGiorno.innerHTML = 'Lunedì'
-} else if (date.getDay = 2){
-    nomeGiorno.innerHTML = 'Martedì'
-} else if (date.getDay = 3){
-    nomeGiorno.innerHTML = 'Mercoledì'
-} else if (date.getDay = 4){
-    nomeGiorno.innerHTML = 'Giovedì'
-} else if (date.getDay = 5){
-    nomeGiorno.innerHTML = 'Venerdì'
-} else if (date.getDay = 6){
-    nomeGiorno.innerHTML = 'Sabato'
-}  
+data;
+console.log(data)
 
 
-let ora = document.querySelector('#ora')
-ora.innerHTML = date.getHours()
-
-let minuti = document.querySelector('#minuti')
-minuti.innerHTML = date.getMinutes()
-
-let secondi = document.querySelector('#secondi')
-secondi.innerHTML = date.getSeconds()
+let dataAttuale = document.getElementById('data-attuale')
+dataAttuale.innerHTML = data
 
 
-let oraInTempoReale = document.querySelector('#oraInTempoReale')
+// metodo 2
 
-setInterval(function(){
-    date.setSeconds( date.getSeconds() + 1 )
-    oraInTempoReale.innerHTML = date.toLocaleTimeString()
-}, 1000)
+
+let dataAttuale2 = document.getElementById('data-attuale2')
+dataAttuale2.innerHTML = data.toLocaleDateString()
+
+
+
+// mostrare ogni elemento
+
+console.log(data.getDate())
+console.log(data.getMonth() + 1)
+console.log(data.getFullYear())
+console.log(data.getHours())
+console.log(data.getMinutes())
+console.log(data.getSeconds())
+
+
+
+//mostare ora in tempo reale
+
+setInterval(function() {
+    
+ let time = new Date()
+ 
+ let oraInTempoReale = document.querySelector('#oraInTempoReale')
+ oraInTempoReale.innerHTML = time.toLocaleTimeString()   
+},1000)
+
+
+
+// data formattazione europea
+
+let dataEuropea = new Date (2022, 6 , 18 , 15, 56, 15, 1)
+console.log(dataEuropea)
+
+let dataFormattata = document.getElementById('data-europea')
+dataFormattata.innerHTML = dataEuropea
+
+
+// prove
+
+console.log (data.getDay())
+
+
+if(data.getDay() == 0){
+
+    console.log('Domenica')
+} else if ( data.getDay() == 1) {
+    console.log('Lunedì')
+} else if ( data.getDay() == 2) {
+    console.log('Martedì')
+} else if ( data.getDay() == 3) {
+    console.log('Mercoledì')
+} else if ( data.getDay() == 4) {
+    console.log('Giovedì')
+} else if ( data.getDay() == 5) {
+    console.log('Venerdì')
+} else if ( data.getDay() == 6) {
+    console.log('Sabato')
+} 
+
+// prove ora
+
+console.log (data.toLocaleTimeString())
 
 
