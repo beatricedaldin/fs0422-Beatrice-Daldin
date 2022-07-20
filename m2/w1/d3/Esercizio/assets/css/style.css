@@ -1,0 +1,101 @@
+body{
+    background-color: blue;
+}
+
+#area{
+    perspective:1000px;
+    transform-style: preserve-3d;
+    height: 100vh;
+}
+
+#cubo{
+    transform-style: preserve-3d;
+    position: relative;
+    margin-top: 300px;
+    margin-left: 300px;
+    height: 30vh;
+    width: 30vw;
+    animation-name: cubo;
+}
+
+
+
+.faccia{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+}
+
+
+
+
+#fronte{ 
+    z-index: 1;
+    
+    transform: translateZ(300px);
+}
+#top{
+    top: -300px;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    background-color: black;
+}
+#sotto{
+    bottom: -412px;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    background-color: blue;
+}
+
+#destra{
+    right: -151px;
+    transform: rotateY(-90deg);
+    transform-origin: left;
+}
+
+#sinistra{
+    left: -300px;
+    transform: rotateY(90deg);
+    transform-origin: right;
+}
+
+#retro{
+    transform: rotateY(180deg);
+}
+
+#fronte .top, #fronte .mid, #fronte .bot{
+    background-image: url(../img/1.jpg);
+}
+#destra .top, #destra .mid, #destra .bot{
+    background-image: url(../img/2.jpg);
+    
+}
+
+#retro .top, #retro .mid, #retro .bot{
+    background-image: url(../img/3.jpg);
+}
+
+#sinistra .top, #sinistra .mid, #sinistra .bot{
+    background-image: url(../img/4.jpg);
+}
+
+#fronte .top, #destra .top, #sinistra .top, #retro .top{
+    background-position: top;
+
+}
+
+#fronte .mid, #destra .mid, #sinistra .mid, #retro .mid{
+    background-position: center;
+}
+
+#fronte .bot, #destra .bot, #sinistra .bot, #retro .bot{
+    background-position: bottom;
+}
+
+
+.top, .mid, .bot{
+    height: 100px;
+}
+
+
+
