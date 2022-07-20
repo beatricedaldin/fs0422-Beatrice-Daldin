@@ -1,100 +1,71 @@
-body{
-    background-color: blue;
+
+
+
+.area {
+  width: 90vw;
+  height: 90vh;
 }
 
-#area{
-    perspective:1000px;
-    transform-style: preserve-3d;
-    height: 100vh;
+.cubo {
+  margin-top: 50px;
+  margin-left: 500px;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation-name: rotation;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  transform: translateZ(-100px);
+  transition: transform 1s;
 }
 
-#cubo{
-    transform-style: preserve-3d;
+/*.rfronte  { transform: translateZ(-100px) rotateY(   0deg); }
+.rdestra  { transform: translateZ(-100px) rotateY( -90deg); }
+.rdietro   { transform: translateZ(-100px) rotateY(-180deg); }
+.rsinistra  { transform: translateZ(-100px) rotateY(  90deg); }*/
+
+.faccia {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+.fronte { background-image: url(../img/4.png); }
+.destra  { background-image: url(../img/3.png);}
+.retro  { background-image: url(../img/2.jpg); }
+.sinistra   { background-image: url(../img/1.jpg);}
+.sopra   { background-color: black; }
+.sotto { background-color: black;}
+
+.fronte { transform: rotateY( 0deg) translateZ(100px); }
+.destra  { transform: rotateY( 90deg) translateZ(100px); }
+.retro  { transform: rotateY(180deg) translateZ(100px); }
+.sinistra   { transform: rotateY(-90deg) translateZ(100px); }
+.sopra    { transform: rotateX( 90deg) translateZ(100px); }
+.sotto { transform: rotateX(-90deg) translateZ(100px); }
+
+
+#play{
     position: relative;
-    margin-top: 300px;
-    margin-left: 300px;
-    height: 30vh;
-    width: 30vw;
-    animation-name: cubo;
+    left: 1050px;
+    top: -100px;
 }
 
 
-
-.faccia{
-    width: 300px;
-    height: 300px;
-    position: absolute;
+#stop{
+    position: relative;
+    left: 330px;
+    top: -100px;
 }
 
 
-
-
-#fronte{ 
-    z-index: 1;
-    
-    transform: translateZ(300px);
-}
-#top{
-    top: -300px;
-    transform: rotateX(-90deg);
-    transform-origin: bottom;
-    background-color: black;
-}
-#sotto{
-    bottom: -412px;
-    transform: rotateX(90deg);
-    transform-origin: top;
-    background-color: blue;
-}
-
-#destra{
-    right: -151px;
-    transform: rotateY(-90deg);
-    transform-origin: left;
-}
-
-#sinistra{
-    left: -300px;
-    transform: rotateY(90deg);
-    transform-origin: right;
-}
-
-#retro{
-    transform: rotateY(180deg);
-}
-
-#fronte .top, #fronte .mid, #fronte .bot{
-    background-image: url(../img/1.jpg);
-}
-#destra .top, #destra .mid, #destra .bot{
-    background-image: url(../img/2.jpg);
-    
-}
-
-#retro .top, #retro .mid, #retro .bot{
-    background-image: url(../img/3.jpg);
-}
-
-#sinistra .top, #sinistra .mid, #sinistra .bot{
-    background-image: url(../img/4.jpg);
-}
-
-#fronte .top, #destra .top, #sinistra .top, #retro .top{
-    background-position: top;
-
-}
-
-#fronte .mid, #destra .mid, #sinistra .mid, #retro .mid{
-    background-position: center;
-}
-
-#fronte .bot, #destra .bot, #sinistra .bot, #retro .bot{
-    background-position: bottom;
-}
-
-
-.top, .mid, .bot{
-    height: 100px;
+@keyframes rotation{
+    0%{ transform: rotateY(0deg)}
+    25%{ transform:  rotateY(90deg)}
+    50%{ transform:  rotateY(180deg)}
+    75%{ transform:  rotateY(270deg)}
+    100%{ transform:  rotateY(360deg)}
 }
 
 
