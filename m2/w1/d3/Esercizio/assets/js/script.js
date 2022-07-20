@@ -1,11 +1,30 @@
+/*let cubo = document.querySelector('.cubo')
+let vai = document.querySelector('#play')
+let fermati = document.querySelector('#stop')
+
+vai.addEventListener('click', function(){
+    cubo.classList.add('animationOn')
+})
+
+fermati.addEventListener('click', function(){
+    cubo.classList.remove('animationOn')
+})
+
+
+
+
+
+
+
+
+
+
+/*
 let cubo = document.querySelector('.cubo');
 let radios = document.getElementsByClassName('.gira');
 let frecciaD = document.querySelector('#destra');
 let frecciaS = document.querySelector('#sinistra');
 let i = 0;
-
-
-
 function cambiaLatoD{
     if(i == 0){
       

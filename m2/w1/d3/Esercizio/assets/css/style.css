@@ -1,72 +1,77 @@
-
-
-
 .area {
-  width: 90vw;
-  height: 90vh;
-}
+    position: absolute;
+    top:50%;
+    left: 50%;
+    perspective: 1500px;
+    transform-style: preserve-3d;
+   }
+   
+   .cubo {
+     position: relative; 
+     transform-style: preserve-3d;
+     animation-duration: 15s;
+     animation-iteration-count: infinite; 
+     animation-name: rotation;
+     transform: rotateX(90deg) rotateY(90deg);  
+   }
 
-.cubo {
-  margin-top: 50px;
-  margin-left: 500px;
-  width: 500px;
-  height: 500px;
-  position: relative;
-  transform-style: preserve-3d;
-  animation-name: rotation;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  transform: translateZ(-100px);
-  transition: transform 1s;
-}
-
-/*.rfronte  { transform: translateZ(-100px) rotateY(   0deg); }
-.rdestra  { transform: translateZ(-100px) rotateY( -90deg); }
-.rdietro   { transform: translateZ(-100px) rotateY(-180deg); }
-.rsinistra  { transform: translateZ(-100px) rotateY(  90deg); }*/
-
-.faccia {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-}
-
-.fronte { background-image: url(../img/4.png); }
-.destra  { background-image: url(../img/3.png);}
-.retro  { background-image: url(../img/2.jpg); }
-.sinistra   { background-image: url(../img/1.jpg);}
-.sopra   { background-color: black; }
-.sotto { background-color: black;}
-
-.fronte { transform: rotateY( 0deg) translateZ(100px); }
-.destra  { transform: rotateY( 90deg) translateZ(100px); }
-.retro  { transform: rotateY(180deg) translateZ(100px); }
-.sinistra   { transform: rotateY(-90deg) translateZ(100px); }
-.sopra    { transform: rotateX( 90deg) translateZ(100px); }
-.sotto { transform: rotateX(-90deg) translateZ(100px); }
-
-
-#play{
-    position: relative;
-    left: 1050px;
-    top: -100px;
-}
-
-
-#stop{
-    position: relative;
-    left: 330px;
-    top: -100px;
-}
-
-
-@keyframes rotation{
-    0%{ transform: rotateY(0deg)}
-    25%{ transform:  rotateY(90deg)}
-    50%{ transform:  rotateY(180deg)}
-    75%{ transform:  rotateY(270deg)}
-    100%{ transform:  rotateY(360deg)}
-}
-
-
-
+   
+ 
+   .faccia {
+     position: absolute;
+     width: 400px;
+     height: 400px;
+   }
+   
+   .fronte {
+     background-image: url(../img/1.jpg); 
+     transform: translateZ(200px) translateX(-200px) translateY(-200px);
+ }
+ .retro  { 
+     background-image: url(../img/2.jpg);
+     transform: translateZ(-200px) translateX(-200px) translateY(-200px);
+     
+ }
+   .destra  { 
+     background-image: url(../img/3.jpg);
+     transform: translateY(-200px) rotateY(90deg);
+   }
+ 
+  .sinistra{
+ 
+     transform: translateY(-200px) translateX(-400px) rotateY(90deg);
+     background-image: url(../img/4.jpg)
+  } 
+   
+   .sopra   { background-color: black;
+             transform: translateX(-200px) translateY(-400px) rotateX(90deg);
+     
+ }
+ 
+   .sotto { background-color: black;
+             transform: translateX(-200px) rotateX(90deg);
+ }
+ 
+   
+   #play{
+       position: relative;
+       right: -450px;
+       top: 800px;
+       background-color: green;
+   }
+   
+   
+   #stop{
+       position: relative;
+       left: 450px;
+       top: 800px;
+       background-color: red;
+   }
+   
+   
+   @keyframes rotation{
+       0% { transform: rotate3d(0,0,0,0)
+     }
+     100% { transform: rotate3d(0,1,0,360deg)
+     } 
+   }
