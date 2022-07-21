@@ -1,0 +1,36 @@
+body {
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.container {
+    width: 400px;
+}
+
+#impegni {
+    width: 300px;
+    height: 46px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#aggiungi{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.paragrafo {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.coseDaFare{
+    cursor: pointer;
+}
