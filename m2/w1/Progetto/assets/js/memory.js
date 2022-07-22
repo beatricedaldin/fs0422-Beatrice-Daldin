@@ -52,6 +52,7 @@ function startTimer(){
 /*CREO LA FUNZIONE STARTGAME, CREO LE CARTE, ASSEGNO LA FUNZIONE SHUFFLE AL MIO ARRAY E FACCIO PARTIRE IL TIMER,
 ASSEGNo L'EVENTO CLICK A TUTTI GLI ELEMENTI DEL MIO ARRAY, CALLBACK DELLE FUNZIONI già A DISPOSIZIONE SOTTO*/
 
+let ricominciabtn = document.querySelector('#button')
 
 function startGame(){  
 
@@ -84,6 +85,8 @@ function startGame(){
     }
   
   }
+
+  ricominciabtn.addEventListener('click', startGame)
 
 
 
@@ -126,31 +129,24 @@ function displayIcon() {
 
 
 
-//una funzione che viene mostrata alla fine quando sono tutte le risposte esatte
-
-// una funzione che nasconde la modale alla fine e riavvia il gioco
-
-// una funzione che calcola il tempo e aggiorna il contenitore sotto
-
 function apriModal(){  
     if (carteTrovate.length == 24){
         clearInterval(Interval);
         modal.classList.add("active");
         document.getElementById("tempoTrascorso").innerHTML = timer.innerHTML;
-        closeModal();
     }
   }
-  
-  function chiudiModal(){  
-    closeicon.addEventListener("click", function(e){
-        modal.classList.remove("active");
-        startGame();
-    });
-  }
+
+  let nuovaPartitabtn = document.querySelector('#button2')
 
   function playAgain(){
     modal.classList.remove("active");
     startGame();
   }
+
+  nuovaPartitabtn.addEventListener('click', playAgain)
+  
+  
+
 
 
