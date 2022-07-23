@@ -62,9 +62,7 @@ function startGame(){
     arrayComparison = [];
   
     let lista = document.querySelector('#griglia');
-    while (lista.hasChildNodes()) {  
-      lista.removeChild(lista.firstChild);
-    }
+    lista.innerHTML ="";
   
      for(var i = 0; i < 24; i++){ 
         let carta = document.createElement('div');   
