@@ -27,20 +27,21 @@ function shuffle(a) {
     }
     return a;
 }
+/*-----------------------------------------------------*/
 
 
 function startTimer(){
-    var s = 0, m = 0,  h = 0;
+    var secs = 0, mins = 0,  hrs = 0;
     Interval = setInterval(function(){
-    timer.innerHTML = 'Tempo: ' + m + " min " + s + " sec";
-      s++;
-      if(s == 60){
-        m++;
-        s = 0;
+    timer.innerHTML = 'Tempo: ' + mins + " minuti " + secs + " secondi";
+      secs++;
+      if(secs == 60){
+        mins++;
+        secs = 0;
       }
-      if(m == 60){
-        h++;
-        m = 0;
+      if(mins == 60){
+        hrs++;
+        mins = 0;
       }
     },1000);
   }
@@ -75,11 +76,11 @@ function startGame(){
     startTimer();
   
     let card = document.getElementsByClassName('card');
-    let cards = [...card];
+   
   
-    for (var i = 0; i < cards.length; i++){
-      cards[i].addEventListener("click", displayIcon);
-      cards[i].addEventListener("click", apriModal);
+    for (var i = 0; i < card.length; i++){
+      card[i].addEventListener("click", displayIcon);
+      card[i].addEventListener("click", apriModal);
     }
   
   }
@@ -89,7 +90,7 @@ function startGame(){
 
 
 
-
+/*------------------------------------------------*/
 function displayIcon() {
     var card = document.getElementsByClassName("card");
     var cards = [...card];
@@ -120,10 +121,11 @@ function displayIcon() {
                     }
                 });
                 arrayComparison = [];
-            }, 700);
+            }, 500);
         }
     }
 }
+/*-----------------------------------------------*/
 
 
 
