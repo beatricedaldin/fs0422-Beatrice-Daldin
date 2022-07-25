@@ -1,4 +1,3 @@
-let ilMioArray = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
 
 
 
@@ -210,6 +209,43 @@ function arcadeMode(){
 arcadeModeBtn.addEventListener('click', arcadeMode)
 
 
+
+/*SETTINGS*/
+
+let impostazioniBtn = document.querySelector('#impostazioni')
+let settingsMenu = document.querySelector('#settingsMenu')
+
+impostazioniBtn.addEventListener('click', function(){
+  mainMenu.classList.add('disattiva');
+  settingsMenu.classList.add('attiva');
+})
+
+
+let animaliBtn = document.querySelector('#Animali')
+let pianteBtn = document.querySelector('#Piante')
+let ciboBtn = document.querySelector('#Cibo')
+
+
+animaliBtn.addEventListener('click', function(){
+    var ilMioArray = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
+    settingsMenu.classList.remove('attiva');
+    mainMenu.classList.remove('disattiva');
+    window.ilMioArray = ilMioArray;
+})
+  
+pianteBtn.addEventListener('click', function(){
+    var ilMioArray = ['🌹', '🌻', '🌷', '🌼', '🌴', '🌵', '🍀', '🍁', '🌲', '🏵', '🌺', '🌾', '🌾', '🍁', '🏵', '🌲', '🌼', '🍀', '🌵', '🌺', '🌻', '🌹', '🌴', '🌷'];
+    settingsMenu.classList.remove('attiva');
+    mainMenu.classList.remove('disattiva');
+    window.ilMioArray = ilMioArray;
+})
+
+ciboBtn.addEventListener('click', function(){
+    var ilMioArray = ['🥓', '🥑', '🥟', '🍕', '🍣', '🥞', '🍿', '🥦', '🥨', '🍼', '🍌', '🍳', '🍼', '🥞', '🍌', '🥦', '🍳', '🥨', '🍿', '🥓', '🥟', '🍣', '🍕', '🥑'];
+    settingsMenu.classList.remove('attiva');
+    mainMenu.classList.remove('disattiva');
+    window.ilMioArray = ilMioArray;
+})
 
 
 

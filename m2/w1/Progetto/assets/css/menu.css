@@ -1,4 +1,4 @@
-#mainMenu{
+#mainMenu, #settingsMenu{
     width: 100vw;
     height: 100vh;
     background-color: white;
@@ -8,6 +8,9 @@
     justify-content: center;
     align-items: center; 
     gap: 50px;
+}
+
+#mainMenu, #flex-impostazioni{
     display: flex;
 }
 
@@ -19,14 +22,23 @@
     display: none;
 }
 
-#arcadeMode, #freeMode{
+#settingsMenu.attiva{
+    display: flex;
+    flex-direction: column;
+}
+
+#flex-impostazioni{
+    gap: 50px;
+}
+
+#arcadeMode, #freeMode, #impostazioni, #Animali, #Piante, #Cibo{
     border-radius: 5px;
     width: 200px;
     height: 200px;  
     cursor: pointer;
 }
 
-#arcadeMode:hover, #freeMode:hover{
+#arcadeMode:hover, #freeMode:hover, #impostazioni:hover{
     background-color: black;
     color: white;
 }
@@ -37,4 +49,8 @@
 
 #freeMode{
     background-color: green;
+}
+
+#impostazioni{
+    background-color: grey;
 }
