@@ -8,9 +8,10 @@
     justify-content: center;
     align-items: center; 
     gap: 50px;
+    flex-direction: column;
 }
 
-#mainMenu, #flex-impostazioni{
+#mainMenu, .flex-impostazioni{
     display: flex;
 }
 
@@ -24,10 +25,9 @@
 
 #settingsMenu.attiva{
     display: flex;
-    flex-direction: column;
 }
 
-#flex-impostazioni{
+.flex-impostazioni{
     gap: 50px;
 }
 
@@ -72,6 +72,11 @@
     transform: scale(1.2);
 }
 
-#Cibo, #Animali, #Piante{
+#Cibo, #Animali, #Piante, #arcadeMode, #freeMode, #impostazioni{
     box-shadow: 5px 5px 15px 5px #000000;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: bold;
 }
