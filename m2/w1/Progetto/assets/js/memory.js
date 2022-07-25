@@ -226,6 +226,7 @@ let pianteBtn = document.querySelector('#Piante')
 let ciboBtn = document.querySelector('#Cibo')
 
 
+/*
 animaliBtn.addEventListener('click', function(){
     var ilMioArray = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
     settingsMenu.classList.remove('attiva');
@@ -245,8 +246,31 @@ ciboBtn.addEventListener('click', function(){
     settingsMenu.classList.remove('attiva');
     mainMenu.classList.remove('disattiva');
     window.ilMioArray = ilMioArray;
+})*/
+
+
+function temaGioco(){
+  settingsMenu.classList.remove('attiva');
+  mainMenu.classList.remove('disattiva');
+}
+
+animaliBtn.addEventListener('click', function(){
+  var ilMioArray = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
+  window.ilMioArray = ilMioArray;
+  temaGioco();
 })
 
+pianteBtn.addEventListener('click', function(){
+  var ilMioArray = ['🌹', '🌻', '🌷', '🌼', '🌴', '🌵', '🍀', '🍁', '🌲', '🏵', '🌺', '🌾', '🌾', '🍁', '🏵', '🌲', '🌼', '🍀', '🌵', '🌺', '🌻', '🌹', '🌴', '🌷'];
+  window.ilMioArray = ilMioArray;
+  temaGioco();
+})
+
+ciboBtn.addEventListener('click', function(){
+  var ilMioArray = ['🥓', '🥑', '🥟', '🍕', '🍣', '🥞', '🍿', '🥦', '🥨', '🍼', '🍌', '🍳', '🍼', '🥞', '🍌', '🥦', '🍳', '🥨', '🍿', '🥓', '🥟', '🍣', '🍕', '🥑'];
+  window.ilMioArray = ilMioArray;
+  temaGioco();
+})
 
 
   
