@@ -54,3 +54,24 @@
 #impostazioni{
     background-color: grey;
 }
+
+#Piante {
+    background-image: linear-gradient(#3D9140, #5E2612);
+}
+
+#Animali{
+    background-image: linear-gradient(#7D9EC0, #5E2612);
+}
+
+#Cibo{
+    background-image: linear-gradient(#FF4040, #5E2612);
+}
+
+#Cibo:hover, #Animali:hover, #Piante:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+#Cibo, #Animali, #Piante{
+    box-shadow: 5px 5px 15px 5px #000000;
+}
