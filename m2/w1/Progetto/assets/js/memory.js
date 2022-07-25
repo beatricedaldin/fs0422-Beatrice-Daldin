@@ -1,7 +1,4 @@
 
-
-
-
 let arrayComparison = [];
 
 
@@ -10,13 +7,6 @@ let modal = document.querySelector("#modal");
 let timer = document.querySelector(".timer");
 var Interval;
 let mainMenu = document.querySelector('#mainMenu');
-
-
-
-
-
-
-
 
 
 /*--------------------------------------------------*/
