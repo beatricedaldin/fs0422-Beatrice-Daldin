@@ -210,67 +210,60 @@ arcadeModeBtn.addEventListener('click', arcadeMode)
 
 
 
-/*SETTINGS*/
+/*SETTINGS ON LOAD E SETTINGS NEL MENU*/
+
+let animaliBtn = document.querySelector('#Animali')
+let pianteBtn = document.querySelector('#Piante')
+let ciboBtn = document.querySelector('#Cibo')
+let settingsMenu = document.querySelector('#settingsMenu')
+document.body.onload = menuImpostazioni();
+
+function menuImpostazioni(){
+  settingsMenu.classList.add('attiva');
+  mainMenu.classList.add('disattiva');
+}
 
 let impostazioniBtn = document.querySelector('#impostazioni')
-let settingsMenu = document.querySelector('#settingsMenu')
+
 
 impostazioniBtn.addEventListener('click', function(){
   mainMenu.classList.add('disattiva');
   settingsMenu.classList.add('attiva');
 })
 
-
-let animaliBtn = document.querySelector('#Animali')
-let pianteBtn = document.querySelector('#Piante')
-let ciboBtn = document.querySelector('#Cibo')
-
-
-/*
-animaliBtn.addEventListener('click', function(){
-    var ilMioArray = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
-    settingsMenu.classList.remove('attiva');
-    mainMenu.classList.remove('disattiva');
-    window.ilMioArray = ilMioArray;
-})
-  
-pianteBtn.addEventListener('click', function(){
-    var ilMioArray = ['🌹', '🌻', '🌷', '🌼', '🌴', '🌵', '🍀', '🍁', '🌲', '🏵', '🌺', '🌾', '🌾', '🍁', '🏵', '🌲', '🌼', '🍀', '🌵', '🌺', '🌻', '🌹', '🌴', '🌷'];
-    settingsMenu.classList.remove('attiva');
-    mainMenu.classList.remove('disattiva');
-    window.ilMioArray = ilMioArray;
-})
-
-ciboBtn.addEventListener('click', function(){
-    var ilMioArray = ['🥓', '🥑', '🥟', '🍕', '🍣', '🥞', '🍿', '🥦', '🥨', '🍼', '🍌', '🍳', '🍼', '🥞', '🍌', '🥦', '🍳', '🥨', '🍿', '🥓', '🥟', '🍣', '🍕', '🥑'];
-    settingsMenu.classList.remove('attiva');
-    mainMenu.classList.remove('disattiva');
-    window.ilMioArray = ilMioArray;
-})*/
-
+let y; 
 
 function temaGioco(){
+  console.log(y)
+  if ( y == 0 ){
+    var ilMioArray = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
+  } else if ( y == 1 ){
+    var ilMioArray = ['🌹', '🌻', '🌷', '🌼', '🌴', '🌵', '🍀', '🍁', '🌲', '🏵', '🌺', '🌾', '🌾', '🍁', '🏵', '🌲', '🌼', '🍀', '🌵', '🌺', '🌻', '🌹', '🌴', '🌷'];
+  } else if ( y == 2 ){
+    var ilMioArray = ['🥓', '🥑', '🥟', '🍕', '🍣', '🥞', '🍿', '🥦', '🥨', '🍼', '🍌', '🍳', '🍼', '🥞', '🍌', '🥦', '🍳', '🥨', '🍿', '🥓', '🥟', '🍣', '🍕', '🥑'];
+  }
+
+  globalThis.ilMioArray = ilMioArray;
   settingsMenu.classList.remove('attiva');
-  mainMenu.classList.remove('disattiva');
+  mainMenu.classList.remove('disattiva')
 }
 
+
 animaliBtn.addEventListener('click', function(){
-  var ilMioArray = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
-  window.ilMioArray = ilMioArray;
+    y = 0
   temaGioco();
 })
 
 pianteBtn.addEventListener('click', function(){
-  var ilMioArray = ['🌹', '🌻', '🌷', '🌼', '🌴', '🌵', '🍀', '🍁', '🌲', '🏵', '🌺', '🌾', '🌾', '🍁', '🏵', '🌲', '🌼', '🍀', '🌵', '🌺', '🌻', '🌹', '🌴', '🌷'];
-  window.ilMioArray = ilMioArray;
+  y = 1
   temaGioco();
 })
 
 ciboBtn.addEventListener('click', function(){
-  var ilMioArray = ['🥓', '🥑', '🥟', '🍕', '🍣', '🥞', '🍿', '🥦', '🥨', '🍼', '🍌', '🍳', '🍼', '🥞', '🍌', '🥦', '🍳', '🥨', '🍿', '🥓', '🥟', '🍣', '🍕', '🥑'];
-  window.ilMioArray = ilMioArray;
+  y = 2
   temaGioco();
 })
+
 
 
   
