@@ -1,0 +1,40 @@
+#mainMenu{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center; 
+    gap: 50px;
+    display: flex;
+}
+
+#mainMenu.disattiva{
+    display: none;
+}
+
+#settingsMenu{
+    display: none;
+}
+
+#arcadeMode, #freeMode{
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;  
+    cursor: pointer;
+}
+
+#arcadeMode:hover, #freeMode:hover{
+    background-color: black;
+    color: white;
+}
+
+#arcadeMode{
+    background-color: red;
+}
+
+#freeMode{
+    background-color: green;
+}

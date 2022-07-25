@@ -1,152 +1,220 @@
-let arrayAnimali = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
+let ilMioArray = ['🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐰', '🐯', '🐱', '🦉', '🐾', '🦁', '🦋', '🐛', '🐝', '🐬', '🦊', '🐨', '🐯', '🐰'];
+
 
 
 
 let arrayComparison = [];
-document.body.onload = startGame();
+
 
 let carteTrovate = document.getElementsByClassName("find");
 let modal = document.querySelector("#modal");
 let timer = document.querySelector(".timer");
 var Interval;
+let mainMenu = document.querySelector('#mainMenu');
 
 
 
+
+
+
+
+
+
+/*--------------------------------------------------*/
 /*FISHER-SHUFFLE*/
 
 function shuffle(a) {
-    var currentIndex = a.length;
-    var temporaryValue, randomIndex;
+  var currentIndex = a.length;
+  var temporaryValue, randomIndex;
 
-    while (currentIndex !== 0) {
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-        temporaryValue = a[currentIndex];
-        a[currentIndex] = a[randomIndex];
-        a[randomIndex] = temporaryValue;
-    }
-    return a;
+  while (currentIndex !== 0) {
+  randomIndex = Math.floor(Math.random() * currentIndex);
+  currentIndex -= 1;
+  temporaryValue = a[currentIndex];
+  a[currentIndex] = a[randomIndex];
+  a[randomIndex] = temporaryValue;
+  }
+  return a;
 }
 /*-----------------------------------------------------*/
 
+let modalita = '';
 
 function startTimer(){
-    var secs = 0, mins = 0,  hrs = 0;
+  
+  if ( modalita == 'free mode' ){
+    let secs = 0
+    let mins = 0
     Interval = setInterval(function(){
-    timer.innerHTML = 'Tempo: ' + mins + " minuti " + secs + " secondi";
-      secs++;
-      if(secs == 60){
-        mins++;
-        secs = 0;
-      }
-      if(mins == 60){
-        hrs++;
-        mins = 0;
-      }
-    },1000);
+    timer.innerHTML = 'Tempo: ' + mins + ' minuti ' +secs + ' secondi';
+    secs++;
+
+  if(secs == 60){
+    mins++;
+    secs = 0;
+  }  
+  },1000) 
+  } else if( modalita == 'arcade mode' ){
+    let secs = 40
+    Interval = setInterval(function(){
+    timer.innerHTML = 'Tempo: ' + secs + " secondi";
+    secs--;
+    if(secs < 0){
+    clearInterval(Interval);
+    loseModal();
   }
+  },1000);
+}    
+}
 
 
 
-
-
-/*CREO LA FUNZIONE STARTGAME, CREO LE CARTE, ASSEGNO LA FUNZIONE SHUFFLE AL MIO ARRAY E FACCIO PARTIRE IL TIMER,
-ASSEGNO L'EVENTO CLICK A TUTTI GLI ELEMENTI DEL MIO ARRAY, CALLBACK DELLE FUNZIONI già A DISPOSIZIONE SOTTO*/
-
-let ricominciabtn = document.querySelector('#button')
+/*STARTGAME*/
 
 function startGame(){  
 
-    let arrayShuffle = shuffle(arrayAnimali);
+  mainMenu.classList.add('disattiva');
+  let arrayShuffle = shuffle(ilMioArray);
+  clearInterval(Interval);
+  arrayComparison = [];
+  let lista = document.querySelector('#griglia');
+  lista.innerHTML ="";
   
-    clearInterval(Interval);
-    arrayComparison = [];
-  
-    let lista = document.querySelector('#griglia');
-    lista.innerHTML ="";
-  
-     for(var i = 0; i < 24; i++){ 
-        let carta = document.createElement('div');   
-        let card = document.createElement('div');
-        card.classList.add('card');
-           document.querySelector('#griglia').appendChild(carta).appendChild(card);
-        card.innerHTML = arrayShuffle[i];
-      }
-    
-    startTimer();
-  
-    let card = document.getElementsByClassName('card');
-   
-  
-    for (var i = 0; i < card.length; i++){
-      card[i].addEventListener("click", displayIcon);
-      card[i].addEventListener("click", apriModal);
-    }
-  
+  for(var i = 0; i < ilMioArray.length; i++){ 
+    let carta = document.createElement('div');   
+    let card = document.createElement('div');
+    card.classList.add('card');
+    document.querySelector('#griglia').appendChild(carta).appendChild(card);
+    card.innerHTML = arrayShuffle[i];
+    card.addEventListener('click', displayIcon);
+    card.addEventListener("click", apriModal);
   }
+    
+  startTimer();
+}
 
-  ricominciabtn.addEventListener('click', startGame)
+let ricominciabtn = document.querySelector('#button')
+
+ricominciabtn.addEventListener('click', startGame)
 
 
 
 
 /*------------------------------------------------*/
 function displayIcon() {
-    var card = document.getElementsByClassName("card");
-    var cards = [...card];
+  var card = document.getElementsByClassName("card");
+  var cards = [...card];
 
-    this.classList.toggle("show");
-    arrayComparison.push(this);
-    var len = arrayComparison.length;
+  this.classList.toggle("show");
+  arrayComparison.push(this);
+  var len = arrayComparison.length;
     
-    if (len === 2) {
+  if (len === 2) {
         
-        if (arrayComparison[0].innerHTML === arrayComparison[1].innerHTML) {
-            arrayComparison[0].classList.add("find", "disabled");
-            arrayComparison[1].classList.add("find", "disabled");
-            arrayComparison = [];
-        } else {
+    if (arrayComparison[0].innerHTML == arrayComparison[1].innerHTML) {
+      arrayComparison[0].classList.add("find", "disabled");
+      arrayComparison[1].classList.add("find", "disabled");
+      arrayComparison = [];
+    } else {
             
-            cards.forEach(function(item) {
-                item.classList.add('disabled');
-            });
+      cards.forEach(function(item) {
+      item.classList.add('disabled');
+      });
            
-            setTimeout(function() {
-                arrayComparison[0].classList.remove("show");
-                arrayComparison[1].classList.remove("show");
-                cards.forEach(function(item) {
-                    item.classList.remove('disabled');
-                    for (var i = 0; i < carteTrovate.length; i++) {
-                        carteTrovate[i].classList.add("disabled");
-                    }
-                });
-                arrayComparison = [];
-            }, 500);
-        }
+    setTimeout(function() {
+      arrayComparison[0].classList.remove("show");
+      arrayComparison[1].classList.remove("show");
+      cards.forEach(function(item) {
+      item.classList.remove('disabled');
+      for (var i = 0; i < carteTrovate.length; i++) {
+        carteTrovate[i].classList.add("disabled");
+      }
+      });
+      arrayComparison = [];
+    }, 500);
     }
+  }
 }
 /*-----------------------------------------------*/
 
 
+/*FINE PARTITA*/
 
 function apriModal(){  
-    if (carteTrovate.length == 24){
-        clearInterval(Interval);
-        modal.classList.add("active");
-        document.getElementById("tempoTrascorso").innerHTML = timer.innerHTML;
-    }
+  console.log(modalita)
+  console.log(carteTrovate)
+  if (carteTrovate.length == ilMioArray.length){
+    clearInterval(Interval);
+    modal.classList.add("active");
+    document.getElementById("tempoTrascorso").innerHTML = timer.innerHTML;
+
+    
+    if ( modalita == 'arcade mode' ){
+      let testoModal = document.querySelector('#testoModal')
+      testoModal.innerHTML = 'Congratulazioni! Hai completato il gioco prima dello scadere del tempo. Ti rimanevano ancora: '
+
+    }  
   }
+}
 
-  let nuovaPartitabtn = document.querySelector('#button2')
+function loseModal(){
+  clearInterval(Interval);
+  modal.classList.add("active");
+  testoModal.innerHTML = 'Mi dispiace, il tempo è scaduto!';
+  tempoTrascorso.innerHTML ='';
+}
 
-  function playAgain(){
-    modal.classList.remove("active");
-    startGame();
-  }
 
-  nuovaPartitabtn.addEventListener('click', playAgain)
+let nuovaPartitabtn = document.querySelector('#button2')
+
+function playAgain(){
+  modal.classList.remove("active");
+  startGame();
+}
+
+nuovaPartitabtn.addEventListener('click', playAgain)
   
+
+/*TAKE IT EASY MODE*/
+
+let freeModeBtn = document.querySelector('#freeMode');
+
+function freeMode (){
+  modalita = 'free mode';
+  startGame()
+}
+
+freeModeBtn.addEventListener('click', freeMode);
+
+
+/* TORNARE AL MENU PRINCIPALE */
+
+let goBackBtn = document.querySelector('.goBack')
+
+goBackBtn.addEventListener('click', function() {
+  mainMenu.classList.remove('disattiva');
+  clearInterval(Interval);
+  timer.innerHTML = '';
+})
+
+
+/*ARCADE MODE*/
+
+let arcadeModeBtn = document.querySelector('#arcadeMode')
+
+function arcadeMode(){
+  modalita = 'arcade mode';
+  startGame();
+}
+
+arcadeModeBtn.addEventListener('click', arcadeMode)
+
+
+
+
+
   
+
 
 
 

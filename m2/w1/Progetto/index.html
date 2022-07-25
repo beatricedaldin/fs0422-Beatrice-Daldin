@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <script src="https://kit.fontawesome.com/c87d722927.js" crossorigin="anonymous"></script>
     <title>Memory Game</title>
 </head>
 
@@ -20,16 +22,22 @@
     <div class="container icon-grid" id="griglia">
     </div>
     <div id="flex-buttontimer" class="container text-center">
+        <input type="button" class="button goBack" value="Torna al Menu Principale">
         <input type="button" id="button" class="button" value="Ricomincia">
-        <div class="timer">Tempo: 0 min 0 sec</div>
+        <div class="timer"></div>
     </div>
 
     <div id="modal">
         <div class="content">
-            <h2>Congratulazioni! Hai risolto il gioco in: </h2>
+            <h2 id="testoModal">Congratulazioni! Hai risolto il gioco in: </h2>
             <p><span id="tempoTrascorso"> </span> </p>
             <p><input type="button" id="button2" class="button" value="Nuova Partita!"></p>
         </div>
+    </div>
+
+    <div id="mainMenu">
+        <button id="arcadeMode"><i class="fa-solid fa-gamepad"></i><p>Arcade Mode</p></button>
+        <button id="freeMode"><i class="fa-solid fa-couch"></i><p>Take it Easy</p></button>
     </div>
 
     <script src="./assets/js/memory.js">
