@@ -8369,9 +8369,9 @@ textarea.form-control-lg {
     display: none !important; } }
 
 #sidebarFixed {
-  position: sticky;
-  top: 0px;
-  right: -200px; }
+  position: fixed;
+  top: 50px;
+  right: 0px; }
 
 body {
   background-size: cover;
