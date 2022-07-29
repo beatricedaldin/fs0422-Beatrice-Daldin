@@ -1,0 +1,13 @@
+//Override
+$theme-color: #981a1a;
+
+$light: $theme-color;
+
+
+//Bg navbar e footer
+
+@mixin bgTopBot {
+    background-color: $light;
+
+    
+}

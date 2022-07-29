@@ -1,0 +1,10 @@
+@import 'variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'functions';
+@import 'sidebar';
+
+
+body{
+    background-size: cover;
+    background-image: linear-gradient( #184e07, #0c8228);
+}
