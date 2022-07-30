@@ -1,13 +1,19 @@
+$bg_body : #184e07;
+
 //Override
-$theme-color: #981a1a;
+$theme_color : #981a1a;
 
-$light: $theme-color;
+$light: $theme_color;
 
 
-//Bg navbar e footer
+//Testo
 
-@mixin bgTopBot {
-    background-color: $light;
+$testo_bianco : testo($theme_color);
+$testo_nero : testo($bg_body);
 
-    
+
+
+@mixin paddings {
+    padding-top: 30px;
+    padding-bottom: 30px;   
 }

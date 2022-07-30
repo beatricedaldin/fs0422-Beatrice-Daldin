@@ -8370,9 +8370,35 @@ textarea.form-control-lg {
 
 #sidebarFixed {
   position: fixed;
-  top: 50px;
-  right: 0px; }
+  top: 98px;
+  right: 0px;
+  color: testo(#981a1a); }
 
-body {
-  background-size: cover;
-  background-image: linear-gradient(#184e07, #0c8228); }
+.sliderPrincipale {
+  max-height: 500px;
+  max-width: 850px; }
+
+.sliderTestimonials {
+  max-height: 500px; }
+
+img {
+  max-height: 500px;
+  border-radius: 5px; }
+
+#navbarNavAltMarkup > a {
+  color: testo(#981a1a); }
+
+.nav-item {
+  background-color: #981a1a;
+  color: testo(#981a1a); }
+
+.bgBody {
+  background-color: #184e07;
+  color: testo(#184e07); }
+
+.row {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+a {
+  cursor: pointer; }

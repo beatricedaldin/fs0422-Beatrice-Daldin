@@ -2,9 +2,24 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'functions';
 @import 'sidebar';
+@import 'sliders';
+@import 'navbarfooter';
 
 
-body{
-    background-size: cover;
-    background-image: linear-gradient( #184e07, #0c8228);
+
+
+.bgBody{
+    background-color: $bg_body;
+    color: $testo_nero;
 }
+
+.row{
+    @include paddings;
+}
+
+a{
+    cursor: pointer;
+}
+
+
+
