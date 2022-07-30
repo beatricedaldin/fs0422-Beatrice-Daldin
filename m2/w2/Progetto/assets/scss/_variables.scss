@@ -17,3 +17,8 @@ $testo_nero : testo($bg_body);
     padding-top: 30px;
     padding-bottom: 30px;   
 }
+@mixin sizes{
+    max-height: 600px;
+    max-width: 1000px;
+    border: white;
+}

@@ -1,13 +1,15 @@
 .sliderPrincipale{
-    max-height: 500px;
-    max-width: 850px;
+    @include sizes
 }
 
 .sliderTestimonials{
-    max-height: 500px;
+    @include sizes;
+    color: $testo_nero;
 }
 
-img{
-   max-height: 500px;
+img:not(footer img, .navbar img, #sidebarFixed img){
+   @include sizes;
+   border: 1px solid white;
    border-radius: 5px;
+
 }

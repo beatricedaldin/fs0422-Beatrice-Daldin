@@ -8375,14 +8375,21 @@ textarea.form-control-lg {
   color: testo(#981a1a); }
 
 .sliderPrincipale {
-  max-height: 500px;
-  max-width: 850px; }
+  max-height: 600px;
+  max-width: 1000px;
+  border: white; }
 
 .sliderTestimonials {
-  max-height: 500px; }
+  max-height: 600px;
+  max-width: 1000px;
+  border: white;
+  color: testo(#184e07); }
 
-img {
-  max-height: 500px;
+img:not(footer img):not(.navbar img):not(#sidebarFixed img) {
+  max-height: 600px;
+  max-width: 1000px;
+  border: white;
+  border: 1px solid white;
   border-radius: 5px; }
 
 #navbarNavAltMarkup > a {
