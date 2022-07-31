@@ -1,3 +1,22 @@
-.nav-item a{
+
+.whiteText{
    color: testoGenerale($light);
 }
+.whiteText:hover:not(p){
+   color: testoHover($light);
+}
+
+#navBar{
+   border-bottom: 2px solid white;
+}
+
+#footerBg{
+   border-top: 2px solid white;
+}
+
+
+
+
+
+
+

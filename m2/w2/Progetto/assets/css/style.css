@@ -8374,28 +8374,43 @@ textarea.form-control-lg {
   right: 0px; }
 
 #sidebarFixed i {
-  color: testoGenerale(#600202); }
+  color: white; }
+
+#sidebarFixed li:hover {
+  background-color: black; }
 
 .sliderTestimonials img {
   max-width: 100%;
   border: 1px solid #270202;
   border-radius: 5px; }
 
-.sliderTestimonials h5, .sliderTestimonials .h5, .sliderTestimonials p, .sliderTestimonials button {
+.sliderTestimonials h5, .sliderTestimonials .h5, .sliderTestimonials p {
   color: #270202; }
 
-.nav-item a {
-  color: testoGenerale(#600202); }
+.sliderTestimonials span {
+  background-color: #270202; }
+
+.whiteText {
+  color: white; }
+
+.whiteText:hover:not(p) {
+  color: black; }
+
+#navBar {
+  border-bottom: 2px solid white; }
+
+#footerBg {
+  border-top: 2px solid white; }
 
 h2, .h2, h5, .h5, .navbar .nav-link {
   font-family: 'Mountains of Christmas', cursive;
   font-weight: bold;
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 #footerBg li {
   font-family: 'Mountains of Christmas', cursive;
   font-weight: bold;
-  font-size: 1.5rem; }
+  font-size: 1.2rem; }
 
 h1, .h1 {
   font-family: 'Mountains of Christmas', cursive;

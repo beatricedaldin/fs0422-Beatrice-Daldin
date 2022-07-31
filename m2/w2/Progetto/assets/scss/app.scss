@@ -1,19 +1,20 @@
 @import 'variables';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'functions';
 @import 'sidebar';
 @import 'slider';
 @import 'navbarfooter';
-@import 'functions';
+
 
 
 
  h2, h5, .navbar .nav-link{
     @include general;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 #footerBg li{
     @include general;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 h1{
@@ -38,6 +39,7 @@ a{
     cursor: pointer;
 }
 
+
 .collImg{
     max-height: 10vh;
     max-width: 30vw;
@@ -54,9 +56,5 @@ a{
 }
 
 
-
-
-
-//Mediaqueries
 
 

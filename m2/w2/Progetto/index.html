@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.png">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Santa's Home</title>
+  <title>Santa's Village</title>
 </head>
 <body>
 
   <!-- NAVBAR -->
 
-  <nav class="navbar navbar-expand-md bg-light border border-white">
+  <nav class="navbar navbar-expand-md bg-light whiteText" id="navBar">
     <div class="container-fluid justify-content-between">
       <a class="navbar-brand" href="#">
         <img src="./assets/img/logo/logo.png" alt="Logo Babbo" height="70px" width="70px">
@@ -26,27 +26,28 @@
       </button>
       <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+          <li class="nav-item hoverBlack">
+            <a class="nav-link whiteText" href="#">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Tickets</a>
+          <li class="nav-item hoverBlack">
+            <a class="nav-link whiteText" href="#">Tickets</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
+          <li class="nav-item hoverBlack">
+            <a class="nav-link whiteText" href="#">Shop</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Gallery</a>
+          <li class="nav-item hoverBlack">
+            <a class="nav-link whiteText" href="#">Gallery</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle d-md-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle d-md-none whiteText" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Contatti
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu d-md-none">
               <li><a class="dropdown-item" href="mailto:joulupukinpaaposti@posti.fi" target="_blank"><i class="bi bi-envelope"></i> Invia la tua Email a Babbo Natale</a></li>
               <li><a class="dropdown-item" href="https://goo.gl/maps/ihiR11jPMZd3mhwW9" target="_blank"><i class="bi bi-pen-fill"></i> Invia la tua Lettera a Babbo Natale</a></li>
               <li><a class="dropdown-item" href=""></a></li>
             </ul>
+            </li>
         </div>
       </div>
     </div>
@@ -81,33 +82,49 @@
       </div>
     </div>
 
+     <!-- PARTNERSHIP -->
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex align-items-center justify-content-evenly" id="collaborations">
+        <img class="collImg" src="./assets/img/logo/toys.png" alt="Toys Center">
+        <img id="elfAgency" src="./assets/img/logo/elfbusiness.svg" alt="Elf Business Agency">
+        <img class="collImg" src="./assets/img/logo/reindeerstransports.svg" alt="Reindeers Transports">
+
+      </div>
+    </div>
+  </div>
+
+
+  
+
 
 
 
 
     <!-- SLIDER TESTIMONIANZE -->
     <div class="row justify-content-center">
-      <div class="col-9 col-md-7 col-lg-6 col-xl-5">
+      <div class="col-9 col-sm-7 col-md-5 col-lg-4 col-xl-3">
+        <h2>Cosa dicono di Noi...</h2>
         <div id="carouselExampleCaptions" class="carousel slide sliderTestimonials" data-bs-ride="false">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./assets/img/slidertestimonials/bimbo.jpg" class="d-block" alt="Mario">
               <div class="carousel-caption d-md-block">
-                <h5>Mario</h5>
+                <h5>Mario F.</h5>
                 <p>Nel Villaggio di Babbo Natale ci sono tante luci colorate!</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./assets/img/slidertestimonials/bimbo2.jpeg" class="d-block" alt="Gianluca">
               <div class="carousel-caption d-md-block">
-                <h5>Gianluca</h5>
-                <p>Ho dato da mangiare tante carote alle Renne!</p>
+                <h5>Gianluca T.</h5>
+                <p>Ho dato da mangiare alle Renne, ero felicissimo!</p>
               </div>
             </div>
             <div class="carousel-item">
               <img src="./assets/img/slidertestimonials/bimba.jpeg" class="d-block" alt="Carla">
               <div class="carousel-caption d-md-block">
-                <h5>Carla</h5>
+                <h5>Carla C.</h5>
                 <p>É stato bellissimo! Ho fatto una foto con Babbo Natale!</p>
               </div>
             </div>
@@ -130,41 +147,44 @@
     <!-- SIDEBAR -->
         
   <div class="d-none d-md-flex flex-column flex-shrink-0 bg-light border border-white" style="width: 4.5rem;" id="sidebarFixed">
-    <a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome" class="d-block p-3 text-decoration-none border-bottom rounded-0 text-center" target="_blank">
-      <i class="bi bi-snapchat"></i>
-    </a>
-  <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-    <li class="nav-item">
+    
+    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+      <li class="whiteText">
+         <a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome" class="d-block p-3 text-decoration-none border-bottom rounded-0 text-center" target="_blank">
+          <i class="bi bi-snapchat"></i>
+        </a>
+      </li>
+    <li class="whiteText">
       <a href="https://www.facebook.com/Babbo-Natale-320539501662422" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
         <i class="bi bi-facebook"></i>
       </a>
     </li>
-    <li>
+    <li class="whiteText">
       <a href="https://www.instagram.com/santas_official/?hl=it" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
         <i class="bi bi-instagram"></i>
       </a>
     </li>
-    <li>
+    <li class="whiteText">
       <a href="https://www.youtube.com/santatelevision" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
         <i class="bi bi-youtube"></i>
       </a>
     </li>
-    <li>
+    <li class="whiteText">
       <a href="https://www.twitch.tv/dada/video/1253007980" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
         <i class="bi bi-twitch"></i>
       </a>
     </li>
-    <li>
+    <li class="whiteText">
        <a href="https://www.tiktok.com" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
         <i class="bi bi-tiktok"></i>
       </a>
     </li>
-    <li>
+    <li class="whiteText">
       <a href="mailto:joulupukinpaaposti@posti.fi" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
         <i class="bi bi-envelope"></i>
      </a>
    </li>
-   <li>
+   <li class="whiteText">
       <a href="https://goo.gl/maps/ihiR11jPMZd3mhwW9" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
         <i class="bi bi-pen-fill"></i>
       </a>
@@ -175,26 +195,8 @@
 
   </ul>     
   </div>
-
-
-
-
-
-  <!-- PARTNERSHIP -->
-  <div class="row">
-    <div class="col-12">
-      <div class="d-flex align-items-center justify-content-evenly" id="collaborations">
-        <img class="collImg" src="./assets/img/logo/toys.png" alt="Toys Center">
-        <img id="elfAgency" src="./assets/img/logo/elfbusiness.svg" alt="Elf Business Agency">
-        <img class="collImg" src="./assets/img/logo/reindeerstransports.svg" alt="Reindeers Transports">
-
-      </div>
-    </div>
   </div>
 
-
-  </div>
-</div>
 
 
 
@@ -204,18 +206,18 @@
 
   <!-- FOOTER -->
 
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-1 bg-light border border-white" id="footerBg">
-    <p class="mb-0"> © 1773 Company, Inc</p>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-1 bg-light whiteText" id="footerBg">
+    <p class="mb-0 whiteText"> © 1773 Company, Inc</p>
     
     <a href="#">
       <img src="./assets/img/logo/renna.png" height="50px" width="50px" alt="Rudolph">
     </a>
     
     <ul class="nav justify-content-end">
-      <li class="nav-item"><a href="#" class="nav-link px-2 active">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 active">Tickets</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2">Shop</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2">Gallery</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 active whiteText">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 whiteText">Tickets</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 whiteText">Shop</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 whiteText">Gallery</a></li>
     </ul>
   </footer>
 
