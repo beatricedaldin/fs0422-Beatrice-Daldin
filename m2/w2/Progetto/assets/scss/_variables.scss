@@ -1,20 +1,17 @@
-$bg_body : #184e07;
+$bg_body : #0e4002;
 
 //Override
-$theme_color : #981a1a;
+$theme_color : #600202;
 
 $light: $theme_color;
 
 
-//Testo
 
-$testo_bianco : testo($theme_color);
-$testo_nero : testo($bg_body);
+//Generale 
 
-
-
-
-@mixin sizes{
-    max-height: 600px;
-    max-width: 1000px;
+@mixin general{
+    font-family: 'Mountains of Christmas', cursive;
+    font-weight: bold;
 }
+
+

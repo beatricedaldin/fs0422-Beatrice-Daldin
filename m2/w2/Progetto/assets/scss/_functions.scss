@@ -1,4 +1,4 @@
-@function testo($color){
+@function testoGenerale($color){
 
     @if(lightness($color) < 50){
         @return white;

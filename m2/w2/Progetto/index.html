@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.png">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Santa's Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="icon" type="image/x-icon" href="./assets/img/logo/logo.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Santa's Home</title>
 </head>
 <body>
 
-    <!-- NAVBAR -->
+  <!-- NAVBAR -->
 
-    <nav class="navbar navbar-expand-lg bg-light border border-white">
-        <div class="container-fluid justify-content-between">
-          <a class="navbar-brand" href="#"><img src="./assets/img/logo/logo.png" alt="Logo Babbo" height="70px" width="70px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" href="#">Home</a>
-              <a class="nav-link" href="#">Info</a>
-              <a class="nav-link" href="#">Shop</a>
-              <a class="nav-link" href="#">Gallery</a>
-              <a class="nav-link"  href="#">Contatti</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      
-      
-    
-
-      <!-- SLIDER PRINCIPALE -->
-      <div class="container-fluid bgBody">
-      <div class="row justify-content-center">
-        <div class="col-10 align-self-center">
-      <div id="carouselExampleSlidesOnly" class="carousel slide sliderPrincipale" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/img/sliderprincipale/renna.jpg" class="d-block w-100" alt="Babbo&Renna">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/sliderprincipale/SKvillage.jpg" class="d-block w-100" alt="Polo Nord Villaggio">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/sliderprincipale/SKhouse.webp" class="d-block w-100" alt="Casa Babbo">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/sliderprincipale/bimbi.jpg" class="d-block w-100" alt="Babbo a lavoro">
-          </div>
+  <nav class="navbar navbar-expand-md bg-light border border-white">
+    <div class="container-fluid justify-content-between">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/img/logo/logo.png" alt="Logo Babbo" height="70px" width="70px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarNavAltMarkup">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle d-md-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contatti
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="mailto:joulupukinpaaposti@posti.fi" target="_blank"><i class="bi bi-envelope"></i> Invia la tua Email a Babbo Natale</a></li>
+              <li><a class="dropdown-item" href="https://goo.gl/maps/ihiR11jPMZd3mhwW9" target="_blank"><i class="bi bi-pen-fill"></i> Invia la tua Lettera a Babbo Natale</a></li>
+              <li><a class="dropdown-item" href=""></a></li>
+            </ul>
         </div>
       </div>
-    
-    
     </div>
+  </nav>
+      
+ <img id="coverImg" src="./assets/img/villaggio di babbo natale.jpg" alt="Villaggio di Babbo Natale">     
+    
+  <div class="container-fluid bgBody">
+  
+  <!-- QUALCOSA SU BABBO NATALE -->
+    <div class="row justify-content-center">
+      <div class="col-10 col-lg-8">
+        <h1>Il Villaggio di Babbo Natale</h1>
+        <p>Il Villaggio di Babbo Natale(Joulupukin Pajakylä in finlandese) situato a circa 8 km da Rovaniemi, in Finlandia, è la residenza ufficiale di Babbo Natale; è infatti possibile incontrarlo personalmente e visitare il suo studio o l'ufficio postale dove ogni anno arrivano le lettere dai bambini di tutto il mondo.
 
+        Nel villaggio sono presenti numerose attrazioni, tutte riguardanti Babbo Natale e la regione della Lapponia, ed è simbolicamente contraddistinto sul pavimento il punto preciso in cui secondo le coordinate di latitudine è situato il circolo polare artico.
+          
+        All'interno di una caverna non distante dal Villaggio di Babbo Natale è presente il Santa Park, un altro parco di divertimenti.</p>
+        <hr>
+        <h2>Un po' di Storia...</h2>
+        <p>Nel dopoguerra, Rovaniemi e la Lapponia sono state le prime a ricevere gli aiuti dell'UNRRA, l'organizzazione umanitaria precorritrice dell'Unicef. La nascita della capanna nel Circolo polare artico e dei servizi turistici è anche legata agli aiuti dell'Unicef. Eleanor Roosevelt, conosciuta come l'anima dell'UNRRA, fece una visita di sorpresa a Rovaniemi nel 1950. Come parte della cerimonia di accoglienza, venne costruita la capanna del Circolo Polare Artico in un paio di settimane.
 
-      <!-- QUALCOSA SU BABBO NATALE -->
-        <div class="row justify-content-center">
-      <div class="col-10">
-        <h1>Babbo Natale</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum natus illo iusto accusamus nihil consequuntur ipsam eius animi possimus, harum laboriosam sit commodi aperiam unde, amet aliquid. Maiores, laborum laboriosam?
-        Inventore neque quod deserunt. Dolor maiores voluptas tempore. Recusandae omnis vel illo? Vero ratione dolorem enim obcaecati aliquid iste vitae fuga velit quis provident! Nisi eveniet odit fugit ut rerum?
-        Provident molestias cumque magnam esse aperiam? Officia laudantium eligendi ex, sit assumenda cum deleniti, impedit explicabo adipisci incidunt ipsum necessitatibus ducimus repudiandae tenetur dolor minus autem nesciunt at accusamus praesentium.
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, nobis hic? Incidunt beatae officiis odit soluta obcaecati quia autem similique rem, debitis a sed enim maxime iste dolores tempore quas?
-      Exercitationem sit quaerat fuga perferendis provident cum quo quod error, nesciunt cumque magni, cupiditate laborum! Sequi sapiente placeat distinctio omnis cupiditate aliquam voluptatum eaque quod? Vel nesciunt architecto possimus quisquam?
-      Reprehenderit nisi incidunt beatae possimus. Illum in cupiditate soluta atque! Quidem omnis distinctio nostrum obcaecati asperiores? Quas ab rem adipisci eum quod ut ipsum ducimus recusandae modi? Aperiam, asperiores eos.
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione necessitatibus sequi commodi fuga earum nesciunt ea in quasi modi. Repellendus eos voluptates quas dignissimos! Adipisci consequuntur aspernatur ad quas.
-    Ex deleniti commodi expedita voluptas. Optio autem animi doloribus iste aperiam, non deleniti deserunt officia nam ipsa laborum delectus beatae itaque alias earum eligendi doloremque debitis blanditiis laboriosam voluptas. Impedit.
-    Labore quaerat iusto libero? Repellat nihil est tempore aut harum quod eum quaerat temporibus sed, corporis perferendis obcaecati, saepe molestias eligendi laudantium aperiam delectus labore natus quis ut doloribus praesentium.
-    Non perferendis nesciunt sint, magnam iure cum ab neque unde aperiam atque autem illo ratione ducimus rem quas tenetur, consequatur ullam quod ipsum molestias quae qui rerum! Modi, dolore illum.
-    Totam, optio id fugiat earum ab nostrum quia ullam ipsam exercitationem eaque eius temporibus, provident architecto nihil laudantium aliquam accusamus sequi soluta illum beatae rem. Voluptas possimus id ut ab?
-    Fuga minima veritatis consequatur vel, nulla rerum, rem, dicta nisi impedit nihil quod a inventore! Expedita, itaque quo unde aut ipsum, error incidunt ipsam alias impedit tempora corrupti labore dolorem?
-    Vero, voluptatem voluptates nemo iusto maiores quod asperiores itaque similique nostrum sapiente quaerat velit, nisi, animi veritatis aspernatur nulla error consequatur officia tempora deleniti? Quasi iste sequi quo incidunt optio.
-    Neque vitae sed deleniti provident porro corrupti voluptatem animi exercitationem, sunt dignissimos iste. Nesciunt neque eveniet similique reiciendis quos rerum ea sit, nobis enim, numquam corrupti ad repellendus laudantium suscipit?
-    Quae molestias eum, dolorum odit saepe repellendus ut odio iure magni fugit obcaecati accusamus voluptas illum nobis, totam nostrum molestiae nulla autem enim modi inventore a necessitatibus! Delectus, libero dolorum.
-    Quasi autem asperiores quas a molestias id, distinctio officiis dolore optio libero corporis dolorum veritatis voluptatum laborum! Iste veniam saepe, illum cupiditate vel quibusdam maiores est, eum fugiat recusandae reiciendis!</p>
+        Quando la moglie del presidente degli Stati Uniti, famosa per il suo impegno umanitario, si recò di sorpresa a Rovaniemi nel 1950 per constatare la ricostruzione postbellica della Lapponia e di Rovaniemi, Uuno Hannula, il prefetto di allora, si pose il problema di quale programma organizzare per l'evento. Hannula fu aiutato dal sindaco Lauri Kaijalainen, che con la collaborazione del suo personale, ottenne in regalo dal professore Eemeli Karinen un pezzo di terreno sulla strada statale n. 4 in direzione nord, al fine di costruirci una capanna per gli ospiti. Fu deciso quindi di organizzare qui, al nord del Circolo Polare Artico, la cerimonia di ricevimento.
+          
+        L'idea nacque dal fatto che una ventina d'anni prima il colonnello Oiva J. Willamo aveva fatto erigere un palo nella stessa zona dove i turisti potevano sostare e fare delle fotografie. Il luogo preciso del palo distrutto durante la guerra e della nuova capanna non fu determinato sulla base di accurate misurazioni scientifiche. Il primo fu innalzato dove il Circolo Polare Artico settentrionale tagliava approssimativamente la strada summenzionata, mentre la seconda nel terreno ricevuto, sebbene successivamente i calcoli dimostrarono che si trovasse 108 metri troppo a sud.
+          
+        La capanna del Circolo Polare Artico, per la cui costruzione restava solo una settimana, fu progettata in tutta fretta in una sola notte dall'architetto Ferdinand Salokangas e realizzata dal personale esperto nella costruzione di baracche di legno del consulente forestale Jarl Sundquist, direttamente dai tronchi in fluitazione prelevati dal fiume Ounasjoki. Secondo le istruzioni, se ne utilizzarono così tanti che «nella baracca c'era posto per un grande pullman pieno di gente». Non rimaneva più molto tempo: i primi tronchi furono prelevati dal fiume il sabato e il sabato successivo, quando l'aereo della signora Roosevelt atterrò all'aeroporto, fu montata la porta esterna della capanna.
+          
+        Domenica 11 maggio 1950 finalmente la capanna era pronta ad accogliere l'importante ospite. Alla cerimonia di ricevimento presero parte molti abitanti di Rovaniemi, che in seguito si abituarono ai molti ospiti di rilievo venuti da lontano. L'evento fu molto importante per il turismo della zona, in quanto si era così creata la prima attrazione principale che attirò sul posto sempre più visitatori.
+          
+        La capanna del Circolo Polare Artico è un punto dei servizi turistici a Rovaniemi che è diventato un centro turistico internazionale di primo piano. Attira ogni anno sempre più ospiti a cui si cerca di offrire servizi sempre migliori. Nel corso degli anni, nella zona della capanna sono sorti ulteriori punti di interesse per i turisti.</p>
       </div>
     </div>
 
@@ -86,133 +85,140 @@
 
 
 
-      <!-- SLIDER TESTIMONIANZE -->
-        <div class="row justify-content-center">
-            <div class="col-10">
-      <div id="carouselExampleCaptions" class="carousel slide sliderTestimonials" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/img/slidertestimonials/bimbo2.webp" class="d-block" alt="Mario">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Mario</h5>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda tenetur quos suscipit eos vero ab sapiente odio a vel numquam? Dolorum soluta qui neque deleniti ipsam? Reprehenderit nostrum aperiam quidem.</p>
+    <!-- SLIDER TESTIMONIANZE -->
+    <div class="row justify-content-center">
+      <div class="col-9 col-md-7 col-lg-6 col-xl-5">
+        <div id="carouselExampleCaptions" class="carousel slide sliderTestimonials" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/slidertestimonials/bimbo.jpg" class="d-block" alt="Mario">
+              <div class="carousel-caption d-md-block">
+                <h5>Mario</h5>
+                <p>Nel Villaggio di Babbo Natale ci sono tante luci colorate!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/slidertestimonials/bimbo2.jpeg" class="d-block" alt="Gianluca">
+              <div class="carousel-caption d-md-block">
+                <h5>Gianluca</h5>
+                <p>Ho dato da mangiare tante carote alle Renne!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/slidertestimonials/bimba.jpeg" class="d-block" alt="Carla">
+              <div class="carousel-caption d-md-block">
+                <h5>Carla</h5>
+                <p>É stato bellissimo! Ho fatto una foto con Babbo Natale!</p>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="./assets/img/slidertestimonials/bimbo.jpg" class="d-block" alt="Gianluca">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Gianluca</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, porro ea nisi libero reiciendis suscipit sunt amet sequi explicabo, labore vero necessitatibus quia perspiciatis quasi repudiandae? Aperiam soluta quia necessitatibus?</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/slidertestimonials/bimba.jpeg" class="d-block" alt="Carla">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Carla</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam suscipit distinctio ut dolores inventore aspernatur unde eos modi nam nostrum error quasi sed exercitationem minus illum, odio consectetur praesentium adipisci.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+          </button>
+        </div>
       </div>
     </div>
 
 
 
 
-     <!-- SIDEBAR -->
+    <!-- SIDEBAR -->
         
-     <div class="d-flex flex-column flex-shrink-0 bg-light border border-white" style="width: 4.5rem;" id="sidebarFixed">
-        <a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome" class="d-block p-3 link-dark text-decoration-none border-bottom rounded-0" target="_blank">
-          <i class="bi bi-snapchat"></i>
-        </a>
-        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-          <li class="nav-item">
-            <a href="https://www.facebook.com/Babbo-Natale-320539501662422" class="nav-link py-3 border-bottom rounded-0 text-decoration-nonee" target="_blank">
-              <i class="bi bi-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/santas_official/?hl=it" class="nav-link py-3 border-bottom rounded-0 text-decoration-nonee" target="_blank">
-              <i class="bi bi-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/santatelevision" class="nav-link py-3 border-bottom rounded-0 text-decoration-nonee" target="_blank">
-              <i class="bi bi-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.twitch.tv/dada/video/1253007980" class="nav-link py-3 border-bottom rounded-0 text-decoration-nonee" target="_blank">
-              <i class="bi bi-twitch"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.tiktok.com" class="nav-link py-3 border-bottom rounded-0 text-decoration-nonee" target="_blank">
-              <i class="bi bi-tiktok"></i>
-            </a>
-          </li>
-        </ul>
-        
-          <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none" target="_blank">
-            <img src="./assets/img/logo/logo.png" alt="mdo" width="24" height="24" class="rounded-circle">
-          </a>
-        
-    </div>
+  <div class="d-none d-md-flex flex-column flex-shrink-0 bg-light border border-white" style="width: 4.5rem;" id="sidebarFixed">
+    <a href="https://accounts.snapchat.com/accounts/login?continue=%2Faccounts%2Fwelcome" class="d-block p-3 text-decoration-none border-bottom rounded-0 text-center" target="_blank">
+      <i class="bi bi-snapchat"></i>
+    </a>
+  <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+    <li class="nav-item">
+      <a href="https://www.facebook.com/Babbo-Natale-320539501662422" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
+        <i class="bi bi-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/santas_official/?hl=it" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/santatelevision" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
+        <i class="bi bi-youtube"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.twitch.tv/dada/video/1253007980" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
+        <i class="bi bi-twitch"></i>
+      </a>
+    </li>
+    <li>
+       <a href="https://www.tiktok.com" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
+        <i class="bi bi-tiktok"></i>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:joulupukinpaaposti@posti.fi" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
+        <i class="bi bi-envelope"></i>
+     </a>
+   </li>
+   <li>
+      <a href="https://goo.gl/maps/ihiR11jPMZd3mhwW9" class="nav-link py-3 border-bottom rounded-0 text-decoration-none" target="_blank">
+        <i class="bi bi-pen-fill"></i>
+      </a>
+    </li>
+  
+     
+
+
+  </ul>     
+  </div>
 
 
 
 
 
-      <!-- PARTNERSHIP -->
-    <div class="row">
-      <div class="col-10">
-        <h2></h2>
-        <div></div>
+  <!-- PARTNERSHIP -->
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex align-items-center justify-content-evenly" id="collaborations">
+        <img class="collImg" src="./assets/img/logo/toys.png" alt="Toys Center">
+        <img id="elfAgency" src="./assets/img/logo/elfbusiness.svg" alt="Elf Business Agency">
+        <img class="collImg" src="./assets/img/logo/reindeerstransports.svg" alt="Reindeers Transports">
+
       </div>
     </div>
+  </div>
 
 
-      </div>
-    </div>
-
-
-
-
+  </div>
+</div>
 
 
 
-      <!-- FOOTER -->
 
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 bg-light border border-white" id="footerBg">
-        <p class="col-md-4 mb-0"> © 1773 Company, Inc</p>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-1 bg-light border border-white" id="footerBg">
+    <p class="mb-0"> © 1773 Company, Inc</p>
     
-        <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-          <img src="./assets/img/logo/renna.png" height="50px" width="50px" alt="Rudolph">
-        </a>
+    <a href="#">
+      <img src="./assets/img/logo/renna.png" height="50px" width="50px" alt="Rudolph">
+    </a>
     
-        <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2">Info</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2">Shop</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2">Gallery</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2">Contatti</a></li>
-        </ul>
-      </footer>
+    <ul class="nav justify-content-end">
+      <li class="nav-item"><a href="#" class="nav-link px-2 active">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 active">Tickets</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2">Shop</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2">Gallery</a></li>
+    </ul>
+  </footer>
 
-<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

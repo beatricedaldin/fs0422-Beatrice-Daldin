@@ -4,5 +4,8 @@
     position: fixed;
     top: 98px;
     right: 0px;
-    color: $testo_bianco;
+}
+
+#sidebarFixed i{
+    color: testoGenerale($light);
 }

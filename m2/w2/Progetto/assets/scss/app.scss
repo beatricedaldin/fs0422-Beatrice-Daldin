@@ -1,25 +1,62 @@
 @import 'variables';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import 'functions';
 @import 'sidebar';
-@import 'sliders';
+@import 'slider';
 @import 'navbarfooter';
+@import 'functions';
 
 
 
+ h2, h5, .navbar .nav-link{
+    @include general;
+    font-size: 2rem;
+}
+#footerBg li{
+    @include general;
+    font-size: 1.5rem;
+}
+
+h1{
+    @include general;
+    font-size: 2.5rem;
+}
+
+hr{
+    width: 30vw;
+}
 
 .bgBody{
     background-color: $bg_body;
-    color: $testo_nero;
+    color: testoGenerale($bg_body);
 }
 
 .row{
-    @include paddings;
+    padding: 30px 0px;
 }
 
 a{
     cursor: pointer;
 }
 
+.collImg{
+    max-height: 10vh;
+    max-width: 30vw;
+}
+
+#elfAgency{
+    max-height: 13vh;
+    max-width: 30vw;
+}
+
+
+#coverImg{
+    max-width: 100%;
+}
+
+
+
+
+
+//Mediaqueries
 
 
