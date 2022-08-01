@@ -8,7 +8,7 @@
 
 
 
- h2, h5, .navbar .nav-link, #timer{
+ h2, h5, .navbar .nav-link, .timer{
     @include general;
     font-size: 1.5rem;
 }
@@ -54,9 +54,9 @@ a{
 }
 
 #countdown{
-    @include fromtheTop;
+    @include fromTheTop;
     position: absolute;
     left:0px;
-    max-width: 200px;
+    width: 200px;
     height: 50px;
 }
