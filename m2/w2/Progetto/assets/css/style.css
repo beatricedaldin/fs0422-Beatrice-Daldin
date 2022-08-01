@@ -8369,8 +8369,8 @@ textarea.form-control-lg {
     display: none !important; } }
 
 #sidebarFixed {
-  position: fixed;
   top: 98px;
+  position: fixed;
   right: 0px; }
 
 #sidebarFixed i {
@@ -8402,7 +8402,7 @@ textarea.form-control-lg {
 #footerBg {
   border-top: 2px solid white; }
 
-h2, .h2, h5, .h5, .navbar .nav-link {
+h2, .h2, h5, .h5, .navbar .nav-link, #timer {
   font-family: 'Mountains of Christmas', cursive;
   font-weight: bold;
   font-size: 1.5rem; }
@@ -8440,3 +8440,10 @@ a {
 
 #coverImg {
   max-width: 100%; }
+
+#countdown {
+  top: 98px;
+  position: absolute;
+  left: 0px;
+  max-width: 200px;
+  height: 50px; }

@@ -13,5 +13,7 @@ $light: $theme_color;
     font-weight: bold;
 }
 
-
+@mixin fromtheTop {
+    top: 98px;
+}
 

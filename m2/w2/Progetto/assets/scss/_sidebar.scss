@@ -1,7 +1,7 @@
 
 #sidebarFixed{
+    @include fromtheTop;
     position: fixed;
-    top: 98px;
     right: 0px;
 }
 

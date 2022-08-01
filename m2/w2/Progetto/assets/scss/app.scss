@@ -8,7 +8,7 @@
 
 
 
- h2, h5, .navbar .nav-link{
+ h2, h5, .navbar .nav-link, #timer{
     @include general;
     font-size: 1.5rem;
 }
@@ -39,7 +39,6 @@ a{
     cursor: pointer;
 }
 
-
 .collImg{
     max-height: 10vh;
     max-width: 30vw;
@@ -50,11 +49,14 @@ a{
     max-width: 30vw;
 }
 
-
 #coverImg{
     max-width: 100%;
 }
 
-
-
-
+#countdown{
+    @include fromtheTop;
+    position: absolute;
+    left:0px;
+    max-width: 200px;
+    height: 50px;
+}
