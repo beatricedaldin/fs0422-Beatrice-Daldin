@@ -21,13 +21,12 @@ fetch(apiUrl)
         let userVal = Object.values(user);
         let row = document.createElement('tr')
         tBody.append(row)
-        
+
 
         for(i=0; i<lenghtUser; i++){
            
             let td = document.createElement('td')
             td.innerHTML = userVal[i]
-            th.innerHTML = userKeys[i]
             row.append(td)
         }
 
