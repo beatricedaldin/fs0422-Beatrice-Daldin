@@ -16,7 +16,7 @@ fetch(apiUrl)
 
 
     for(let user of res){
-        let userKeys = Object.keys(user) //FARE I TH UNA SOLA VOLTA
+        let userKeys = Object.keys(user) //FARE I TH UNA SOLA VOLTA, MACOME?
         let lenghtUser = Object.keys(user).length;
         let userVal = Object.values(user);
         let row = document.createElement('tr')
