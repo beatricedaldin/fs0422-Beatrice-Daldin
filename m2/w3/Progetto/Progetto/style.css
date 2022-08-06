@@ -1,0 +1,19 @@
+.table{
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.tableCaption{
+    border: 1px solid black;
+}
+
+.row:nth-child(odd){
+    background-color: lightgrey;
+}
+
+.icon{
+    
+    width: 30px;
+    height: 30px;
+    
+}
