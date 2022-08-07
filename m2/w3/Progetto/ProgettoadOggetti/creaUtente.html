@@ -10,22 +10,22 @@
 </head>
 <body>
     
-    <form>
+    <form id="myForm" class="container">
             <div class="mb-3">
               <label for="TextInput" class="form-label">Username</label>
-              <input type="text" id="usernameInput" class="form-control" placeholder="Username">
+              <input type="text" id="usernameInput" class="form-control" placeholder="This is your Username...">
             </div>
             <div class="mb-3">
                 <label for="TextInput" class="form-label">First Name</label>
-                <input type="text" id="nameInput" class="form-control" placeholder="First Name">
+                <input type="text" id="nameInput" class="form-control" placeholder="This is your name...">
               </div>
               <div class="mb-3">
                 <label for="TextInput" class="form-label">Last Name</label>
-                <input type="text" id="lastNameInput" class="form-control" placeholder="Last Name">
+                <input type="text" id="lastNameInput" class="form-control" placeholder="This is your last name...">
               </div>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="This is your email...">
         </div>
         <div class="mb-3">
             <label for="selectH" class="form-label">Hogwarts House</label>
@@ -51,13 +51,14 @@
               <option>Male</option>
             </select>
         </div>
-        <button type="submit" id="subBtn" class="btn btn-primary">Submit</button>
+        <button type="submit" id="subBtn" class="btn btn-primary mb-3">Submit</button>
+        <button type="button" id="home" class="btn btn-primary">Go Back</button>
       </form>
 
 
 
 
-
+     
     <script src="./js/creazione.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

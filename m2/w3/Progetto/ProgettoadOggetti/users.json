@@ -1,20 +1,74 @@
-[
-  {
-    "username": "john",
-    "firstName": "John",
-    "lastName": "Doe",
-    "gender": "Male",
-    "email": "john.doe@example.com",
-    "role": "Admin",
-    "house": "Slytherin"
-  },
-  {
-    "username": "jane",
-    "firstName": "Jane",
-    "lastName": "Doe",
-    "gender": "Female",
-    "email": "jane.doe@example.com",
-    "role": "Mod",
-    "house": "Hufflepuff"
-  }
-]
+{
+  "utenti": [
+    {
+      "username": "brododipollo",
+      "firstName": "Beatrice",
+      "lastName": "Daldin",
+      "gender": "Female",
+      "email": "beadaldin@gmail.com",
+      "role": "Admin",
+      "house": "Ravenclaw",
+      "id": 1
+    },
+    {
+      "username": "robr",
+      "firstName": "Roberto",
+      "lastName": "Palazzolo",
+      "gender": "Male",
+      "email": "palauouo@gmail.com",
+      "role": "User",
+      "house": "Slytherin",
+      "id": 2
+    },
+    {
+      "username": "tirolumido",
+      "firstName": "Daniele",
+      "lastName": "Magnani",
+      "gender": "Male",
+      "email": "danixx@gmail.com",
+      "role": "Mod",
+      "house": "Hufflepuff",
+      "id": 3
+    },
+    {
+      "username": "fonta95",
+      "firstName": "Francesco",
+      "lastName": "Fontanelli",
+      "gender": "Male",
+      "email": "fonta@gmail.com",
+      "role": "User",
+      "house": "Gryffindor",
+      "id": 4
+    },
+    {
+      "username": "axel",
+      "firstName": "Filippo",
+      "lastName": "Mangani",
+      "gender": "Male",
+      "email": "manga93@gmail.com",
+      "role": "Admin",
+      "house": "Slytherin",
+      "id": 5
+    },
+    {
+      "username": "unsondovo",
+      "firstName": "Sabrina",
+      "lastName": "Magnani",
+      "gender": "Female",
+      "email": "sbama@gmail.com",
+      "role": "Mod",
+      "house": "Ravenclaw",
+      "id": 6
+    },
+    {
+      "username": "mommia",
+      "firstName": "Francesco",
+      "lastName": "Mannozzi",
+      "gender": "Male",
+      "email": "mommia92@gmail.com",
+      "role": "User",
+      "house": "Gryffindor",
+      "id": 7
+    }
+  ]
+}

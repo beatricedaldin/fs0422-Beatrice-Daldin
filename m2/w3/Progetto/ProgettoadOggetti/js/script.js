@@ -1,5 +1,5 @@
 class Utente{
-    constructor(username, firstname, lastname, gender, email, role, house){
+    constructor(username, firstname, lastname, gender, email, role, house, id){
         this.username = username
         this.firstName = firstname
         this.lastName = lastname
@@ -7,21 +7,24 @@ class Utente{
         this.email = email
         this.role = role
         this.house = house
+        this.id = id
     }
 }
 
-const apiUrl = 'users.json';
+const apiUrl = 'http://localhost:3000/utenti';
 
 fetch(apiUrl)
 .then(res => res.json())
 .then(utenti => {
 
-    let container = document.getElementById('container');
+    let container = document.createElement('div');
+    container.classList.add('container');
+    document.body.append(container)
     let board = document.createElement('div');
     board.classList.add('board');
     container.append(board);
     let caption = document.createElement('h2');
-    caption.innerHTML = 'Users';
+    caption.innerHTML = 'ONLINE Users';
     let listaUtenti = document.createElement('div');
     listaUtenti.classList.add('listaUtenti');
     board.append(caption,listaUtenti);
@@ -36,14 +39,15 @@ fetch(apiUrl)
 
     for(let utente of utenti){
         
-        utente = new Utente(utente.username, utente.firstName, utente.lastName, utente.gender, utente.email, utente.role, utente.house)
+        utente = new Utente(utente.username, utente.firstName, utente.lastName, utente.gender, utente.email, utente.role, utente.house, utente.id)
         console.log(utente)
-        let nickname = document.createElement('p')
+        let nickname = document.createElement('a')
         nickname.innerHTML = utente.username
         listaUtenti.append(nickname)
-        nickname.addEventListener('click', function(){
-            location.href = "utente.html"
-        })
+        
+        nickname.href = 'utente.html?id=' + utente.id
+        console.log(utente)
+        console.log(utente.id)
 
         if(utente.house == "Gryffindor"){
             nickname.style.color = 'red'

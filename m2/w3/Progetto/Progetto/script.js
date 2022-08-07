@@ -30,6 +30,8 @@ fetch(apiUrl)
            
             let td = document.createElement('td');
             td.innerHTML = user[prop];
+            console.log(prop)
+            console.log(user[prop])
             row.append(td);
 
             if(prop == "profileURL"){
