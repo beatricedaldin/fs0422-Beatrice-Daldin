@@ -1,4 +1,20 @@
 [
-    
-    
-  ]
+  {
+    "username": "john",
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "Male",
+    "email": "john.doe@example.com",
+    "role": "Admin",
+    "house": "Slytherin"
+  },
+  {
+    "username": "jane",
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "gender": "Female",
+    "email": "jane.doe@example.com",
+    "role": "Mod",
+    "house": "Hufflepuff"
+  }
+]

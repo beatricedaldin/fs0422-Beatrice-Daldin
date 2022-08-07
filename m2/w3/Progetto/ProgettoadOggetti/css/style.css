@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     height: 50vh;
+    background-color: black;
 }
 
 #container{
@@ -16,8 +17,8 @@ h2{
     align-self: center;
     font-weight: bold;
     font-size: 2rem;
-    
-   
+    color: white; 
+    padding-bottom: 30px;
 }
 
 .listaUtenti{

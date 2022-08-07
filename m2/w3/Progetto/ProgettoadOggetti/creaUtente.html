@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Crea un nuovo Utente</title>
+</head>
+<body>
+    
+    <form>
+            <div class="mb-3">
+              <label for="TextInput" class="form-label">Username</label>
+              <input type="text" id="usernameInput" class="form-control" placeholder="Username">
+            </div>
+            <div class="mb-3">
+                <label for="TextInput" class="form-label">First Name</label>
+                <input type="text" id="nameInput" class="form-control" placeholder="First Name">
+              </div>
+              <div class="mb-3">
+                <label for="TextInput" class="form-label">Last Name</label>
+                <input type="text" id="lastNameInput" class="form-control" placeholder="Last Name">
+              </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="selectH" class="form-label">Hogwarts House</label>
+            <select id="selectH" class="form-select">
+              <option>Gryffindor</option>
+              <option>Ravenclaw</option>
+              <option>Hufflepuff</option>
+              <option>Slytherin</option>
+            </select>
+        </div>  
+        <div class="mb-3">
+            <label for="selectR" class="form-label">Forum's role</label>
+            <select id="selectR" class="form-select">
+              <option>User</option>
+              <option>Mod</option>
+              <option>Admin</option>
+            </select>
+        </div> 
+        <div class="mb-3">
+            <label for="selectG" class="form-label">Gender</label>
+            <select id="selectG" class="form-select">
+              <option>Female</option>
+              <option>Male</option>
+            </select>
+        </div>
+        <button type="submit" id="subBtn" class="btn btn-primary">Submit</button>
+      </form>
+
+
+
+
+
+    <script src="./js/creazione.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
