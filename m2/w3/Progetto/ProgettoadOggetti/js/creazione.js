@@ -42,7 +42,7 @@ subBtn.addEventListener('click', function(e){
     .then(res => res.json())
     .then(res => {
         Swal.fire({
-            position: 'top-end',
+            position: 'center',
             icon: 'success',
             title: 'A new user just popped up!',
             text:`The User ${res.username} has been created`,

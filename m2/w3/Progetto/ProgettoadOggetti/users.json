@@ -39,6 +39,16 @@
       "role": "User",
       "house": "Gryffindor",
       "id": 4
+    },
+    {
+      "username": "hdkajhdkjhd",
+      "firstName": "dkjhakjhd",
+      "lastName": "hdkjahjda",
+      "gender": "Female",
+      "email": "dakjhda@gmail.com",
+      "role": "Admin",
+      "house": "Gryffindor",
+      "id": 5
     }
   ]
 }
