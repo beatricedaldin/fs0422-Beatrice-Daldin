@@ -9,8 +9,6 @@ class Utente{
         this.house = house
     }
 }
-
-const apiUrl = 'http://localhost:3000/utenti';
 let subBtn = document.querySelector('#subBtn')
 
 subBtn.addEventListener('click', function(e){
@@ -38,7 +36,7 @@ subBtn.addEventListener('click', function(e){
         }
     }
     
-    fetch(apiUrl,options)
+    fetch('http://localhost:3000/utenti',options)
     .then(res => res.json())
     .then(res => {
         Swal.fire({

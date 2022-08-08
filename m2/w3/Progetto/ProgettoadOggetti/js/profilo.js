@@ -1,10 +1,8 @@
-const apiUrl = 'http://localhost:3000/utenti';
-
 let params = new URLSearchParams(location.search);
 let userId = params.get('id')
 console.log(userId)
 
-fetch(apiUrl+'/'+userId)
+fetch('http://localhost:3000/utenti'+'/'+userId)
 .then(res => res.json())
 .then(utente => {
 

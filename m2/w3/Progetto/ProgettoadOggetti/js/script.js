@@ -11,9 +11,8 @@ class Utente{
     }
 }
 
-const apiUrl = 'http://localhost:3000/utenti';
 
-fetch(apiUrl)
+fetch('http://localhost:3000/utenti')
 .then(res => res.json())
 .then(utenti => {
 
