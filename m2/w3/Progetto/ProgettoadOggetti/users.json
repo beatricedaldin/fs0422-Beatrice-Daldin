@@ -39,36 +39,6 @@
       "role": "User",
       "house": "Gryffindor",
       "id": 4
-    },
-    {
-      "username": "axel",
-      "firstName": "Filippo",
-      "lastName": "Mangani",
-      "gender": "Male",
-      "email": "manga93@gmail.com",
-      "role": "Admin",
-      "house": "Slytherin",
-      "id": 5
-    },
-    {
-      "username": "unsondovo",
-      "firstName": "Sabrina",
-      "lastName": "Magnani",
-      "gender": "Female",
-      "email": "sbama@gmail.com",
-      "role": "Mod",
-      "house": "Ravenclaw",
-      "id": 6
-    },
-    {
-      "username": "mommia",
-      "firstName": "Francesco",
-      "lastName": "Mannozzi",
-      "gender": "Male",
-      "email": "mommia92@gmail.com",
-      "role": "User",
-      "house": "Gryffindor",
-      "id": 7
     }
   ]
 }
