@@ -11,7 +11,6 @@ class Utente{
     }
 }
 
-
 fetch('http://localhost:3000/utenti')
 .then(res => res.json())
 .then(utenti => {
