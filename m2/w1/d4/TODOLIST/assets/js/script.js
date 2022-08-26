@@ -17,6 +17,10 @@ aggiungiIc.addEventListener('click', function(){
 
 
 
+
+
+
+
 let coseDaFare = document.querySelectorAll('.coseDaFare')
 
 coseDaFare.forEach(cosa => { 

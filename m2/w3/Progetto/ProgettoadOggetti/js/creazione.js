@@ -1,5 +1,5 @@
 class Utente{
-    constructor(username, firstname, lastname, gender, email, role, house,id){
+    constructor(username, firstname, lastname, gender, email, role, house){
         this.username = username
         this.firstName = firstname
         this.lastName = lastname
