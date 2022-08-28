@@ -2,42 +2,37 @@ let submitBtn = document.querySelector('#submit')
 let container = document.querySelector('#container')
 let nameForm = document.querySelector('#name')
 let reviewForm = document.querySelector('#review')
+let arrCol = ['black', 'maroon', 'tomato', 'orange', 'green', 'violet', 'blue', 'purple', 'olive', 'brown', 'red', 'lime', 'teal', 'aqua', 'indigo', 'magenta']
 
-submitBtn.addEventListener('click', function(e){
+submitBtn.addEventListener('click', function (e) {
     e.preventDefault()
-    /* Metodo estremamente semplice che non salva i dati al reload della pagina
-
-    let date = new Date()
-    let post = document.createElement('div')
-    post.classList.add('post')
-    let nameGuest = document.createElement('p')
-    nameGuest.classList.add('nameGuest')
-    nameGuest.innerHTML = nameForm.value
-    let reviewGuest = document.createElement('p') 
-    reviewGuest.classList.add('reviewGuest')
-    reviewGuest.innerHTML = reviewForm.value
-    let dateGuest = document.createElement('p')
-    dateGuest.classList.add('dateGuest')
-    dateGuest.innerHTML = date
-    post.append(nameGuest, reviewGuest, dateGuest)
-    container.append(post)*/
     let dateGuest = new Date()
-    let reviewGuest = reviewForm.value + ' on ' + dateGuest 
+    let reviewGuest = reviewForm.value + ' on ' + dateGuest.toLocaleString()
     let nameGuest = nameForm.value
     localStorage.setItem(nameGuest, reviewGuest)
     location.reload()
-    
-    
+
+
 })
 
-/* LocalStorage ma tutte le date si aggiornano al refresh  della pagina*/
 
 Object.keys(localStorage).forEach((key) => {
     let value = localStorage.getItem(key)
     console.log(value)
     console.log(key)
-    let post = document. createElement('div')
+    let post = document.createElement('div')
     post.classList.add('post')
-    post.innerHTML = key + ' says: ' + value 
+    let p1 = document.createElement('p')
+    p1.classList.add('nameStyle')
+    let p2 = document.createElement('p')
+    p1.innerHTML = key + ' says: '
+    p2.innerHTML =  value 
+    post.append(p1, p2)
     container.append(post)
+    let randNumCol = Math.floor(Math.random()*(arrCol.length))
+    let color = arrCol[randNumCol]
+    p1.style.color = color
 })
+
+
+
