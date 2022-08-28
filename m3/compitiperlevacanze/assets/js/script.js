@@ -21,7 +21,8 @@ submitBtn.addEventListener('click', function(e){
     dateGuest.innerHTML = date
     post.append(nameGuest, reviewGuest, dateGuest)
     container.append(post)*/
-    let reviewGuest = reviewForm.value 
+    let dateGuest = new Date()
+    let reviewGuest = reviewForm.value + ' on ' + dateGuest 
     let nameGuest = nameForm.value
     localStorage.setItem(nameGuest, reviewGuest)
     location.reload()
@@ -32,12 +33,11 @@ submitBtn.addEventListener('click', function(e){
 /* LocalStorage ma tutte le date si aggiornano al refresh  della pagina*/
 
 Object.keys(localStorage).forEach((key) => {
-    let dateGuest = new Date()
     let value = localStorage.getItem(key)
     console.log(value)
     console.log(key)
     let post = document. createElement('div')
     post.classList.add('post')
-    post.innerHTML = key + ' says: ' + value + ' on ' + dateGuest
+    post.innerHTML = key + ' says: ' + value 
     container.append(post)
 })
