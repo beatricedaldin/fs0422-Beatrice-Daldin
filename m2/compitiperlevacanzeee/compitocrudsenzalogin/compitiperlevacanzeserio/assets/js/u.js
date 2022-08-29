@@ -9,8 +9,10 @@ fetch(apiUsers+'/'+userId)
 .then(user => {
     let nameForm = document.querySelector('#name')
     let reviewForm = document.querySelector('#review')
+    let dateForm = document.querySelector('#date')
     nameForm.value = user.name
     reviewForm.value = user.review
+    dateForm.value = user.date
 })
 
 
@@ -20,10 +22,12 @@ btnUpdate.addEventListener('click',function(e){
 
     let nameForm = document.querySelector('#name')
     let reviewForm = document.querySelector('#review')
+    let dateForm = document.querySelector('#date')
 
     let user = {
         name: nameForm.value,
-        review: reviewForm.value
+        review: reviewForm.value,
+        date: dateForm.value
     }
 
     let options = {
