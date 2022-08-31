@@ -63,8 +63,6 @@ getUtileTasse():number{
 }
 
 getRedditoAnnuoNetto():number{
-
-    
     return this.redditoAnnuoLordo - this.getUtileTasse();
 }
 
