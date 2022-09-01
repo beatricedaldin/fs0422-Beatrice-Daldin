@@ -24,7 +24,7 @@ fetch("Abbigliamento.json")
     .then(res => res.json())
     .then(vestiti => {
     console.log(vestiti);
-    vestiti.map((x) => {
+    vestiti.forEach((x) => {
         let capoAbbigliamento = new AEBG(x.id, x.codprod, x.collezione, x.capo, x.modello, x.quantita, x.colore, x.prezzoivaesclusa, x.prezzoivainclusa, x.disponibile, x.saldo);
         console.log(capoAbbigliamento);
         console.log(capoAbbigliamento.getSaldoCapo());

@@ -51,7 +51,7 @@ fetch("Abbigliamento.json")
 
     console.log(vestiti);
 
-    vestiti.map( (x: { id: number; codprod: number; collezione: string; capo: string; modello: number; quantita: number; colore: string; prezzoivaesclusa: number; prezzoivainclusa: number; disponibile: string; saldo: number }) => {
+    vestiti.forEach( (x: { id: number; codprod: number; collezione: string; capo: string; modello: number; quantita: number; colore: string; prezzoivaesclusa: number; prezzoivainclusa: number; disponibile: string; saldo: number }) => {
 
         let capoAbbigliamento = new AEBG (x.id, x.codprod, x.collezione, x.capo, x.modello, x.quantita, x.colore, x.prezzoivaesclusa, x.prezzoivainclusa, x.disponibile, x.saldo) 
 
