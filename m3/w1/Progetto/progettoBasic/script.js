@@ -5,11 +5,11 @@ class FirstUser {
         this.nChiamate = nChiamate;
         this.costoPerMinuto = 0.20;
     }
-    setCarica(ricarica) {
-        this.carica += ricarica;
+    setCarica(unaRicarica) {
+        this.carica += unaRicarica;
     }
-    setChiamata(minuti) {
-        let costoChiamata = this.costoPerMinuto * minuti;
+    setChiamata(minutiDurata) {
+        let costoChiamata = this.costoPerMinuto * minutiDurata;
         this.carica -= costoChiamata;
         this.nChiamate++;
     }
@@ -29,11 +29,11 @@ class SecondUser {
         this.nChiamate = nChiamate;
         this.costoPerMinuto = 0.20;
     }
-    setCarica(ricarica) {
-        this.carica += ricarica;
+    setCarica(unaRicarica) {
+        this.carica += unaRicarica;
     }
-    setChiamata(minuti) {
-        let costoChiamata = this.costoPerMinuto * minuti;
+    setChiamata(minutiDurata) {
+        let costoChiamata = this.costoPerMinuto * minutiDurata;
         this.carica -= costoChiamata;
         this.nChiamate++;
     }
@@ -56,8 +56,8 @@ class ThirdUser {
     setCarica(unaRicarica) {
         this.carica += unaRicarica;
     }
-    setChiamata(minuti) {
-        let costoChiamata = this.costoPerMinuto * minuti;
+    setChiamata(minutiDurata) {
+        let costoChiamata = this.costoPerMinuto * minutiDurata;
         this.carica -= costoChiamata;
         this.nChiamate++;
     }

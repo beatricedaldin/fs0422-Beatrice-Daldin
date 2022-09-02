@@ -2,8 +2,8 @@ interface ISmartphone {
     carica:number
     nChiamate:number
     costoPerMinuto:number
-    setCarica(ricarica:number):void
-    setChiamata(minuti:number):void
+    setCarica(unaRicarica :number):void
+    setChiamata(minutiDurata:number):void
     numero404():number
     getNChiamate():number
     setAzzeraChiamate():void
@@ -18,11 +18,11 @@ class FirstUser implements ISmartphone{
         this.nChiamate = nChiamate
         this.costoPerMinuto = 0.20
     }
-    setCarica(ricarica: number){
-      this.carica += ricarica  
+    setCarica(unaRicarica : number){
+      this.carica += unaRicarica 
     }
-    setChiamata(minuti: number){
-        let costoChiamata = this.costoPerMinuto * minuti
+    setChiamata(minutiDurata: number){
+        let costoChiamata = this.costoPerMinuto * minutiDurata
         this.carica -= costoChiamata
         this.nChiamate ++
     }
@@ -46,11 +46,11 @@ class SecondUser implements ISmartphone{
         this.nChiamate = nChiamate
         this.costoPerMinuto = 0.20
     }
-    setCarica(ricarica: number){
-      this.carica += ricarica  
+    setCarica(unaRicarica : number){
+      this.carica += unaRicarica  
     }
-    setChiamata(minuti: number){
-        let costoChiamata = this.costoPerMinuto * minuti
+    setChiamata(minutiDurata: number){
+        let costoChiamata = this.costoPerMinuto * minutiDurata
         this.carica -= costoChiamata
         this.nChiamate ++
     }
@@ -77,9 +77,9 @@ class ThirdUser implements ISmartphone{
     setCarica(unaRicarica: number){
       this.carica += unaRicarica  
     }
-    setChiamata(minuti: number){
+    setChiamata(minutiDurata: number){
     
-        let costoChiamata = this.costoPerMinuto * minuti
+        let costoChiamata = this.costoPerMinuto * minutiDurata
         this.carica -= costoChiamata
         this.nChiamate ++
        
