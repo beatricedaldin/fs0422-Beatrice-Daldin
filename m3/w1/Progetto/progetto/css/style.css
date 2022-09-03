@@ -1,0 +1,77 @@
+body{
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+}
+
+#container{
+    width: 400px;
+    height: 600px;
+    background-color: beige;
+    border-radius: 5px;
+    margin: 50px auto;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#icons i, #time{
+    margin-top: 5px;
+    width: 30px;
+    margin-bottom: 5px;
+}
+
+#mid{
+    height: 515px;
+    background-image: url(../img/bgmid.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#bot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#call, #sms{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#call{
+    background-color: dodgerblue;
+}
+
+#call:hover{
+    background-color: #2980B9;
+}
+
+#sms{
+    background-color: mediumseagreen;
+}
+
+#sms:hover{
+    background-color: #16A085;
+}
+
+button{
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+
+button i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#widget{
+    background-color: beige;
+    border: 0px;
+    border-radius: 5px;
+}
