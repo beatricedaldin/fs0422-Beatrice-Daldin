@@ -1,9 +1,15 @@
-body{
+/* GENERALE */
+
+body {
     background-image: url('../img/bg.jpg');
     background-repeat: no-repeat;
 }
 
-#container{
+/* SCHERMATE GENERALE */
+
+#schermataMain,
+#schermataStart,
+#schermataPwr, #schermataSettings,#schermataRicarica, #schermataRubrica, #schermataChiamate, #schermataMessaggi, #schermataInternet {
     width: 400px;
     height: 600px;
     background-color: beige;
@@ -11,55 +17,120 @@ body{
     margin: 50px auto;
 }
 
-#top{
+#schermataPwr,
+.top, .icons,
+#bot,
+.mid2, #schermataSettings.active, #schermataRicarica.active, #schermataRubrica.active, #schermataChiamate.active, #flexRub, #schermataMessaggi.active, #flexChat, #headerChat,#botChat, #him, #schermataInternet.active{
     display: flex;
+}
+
+#schermataStart,
+#schermataMain, #schermataSettings, #schermataRicarica, #schermataPwr.disabled, #schermataRubrica, #schermataChiamate, #schermataMessaggi, #schermataInternet {
+    display: none;
+}
+
+#schermataPwr{
+    justify-content: center;
+    background-color: black;
+}
+
+#schermataStart.active, #schermataMain.active {
+    display: block;
+}
+
+.top {
     flex-direction: row;
     justify-content: space-between;
 }
 
-#icons i, #time{
-    margin-top: 5px;
-    width: 30px;
-    margin-bottom: 5px;
+.icons, .time {
+    margin: 5px 5px;
+    width: 200px;
 }
 
-#mid{
+.icons {
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/*////////////////////////////////////////////*/
+/* SCHERMATA MAIN */
+
+#mid {
     height: 515px;
     background-image: url(../img/bgmid.jpg);
     background-position: center;
     background-size: cover;
+    display: flex;
 }
 
-#bot{
-    display: flex;
+#bot {
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-#call, #sms{
+#call,
+#sms,
+#ricarica, 
+#settings, #rubrica, #internet {
     height: 50px;
     width: 50px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
 
-#call{
+#settings{
+    background-color: rgb(172, 169, 169);
+}
+
+#settings:hover{
+    background-color: grey;
+}
+
+#call {
     background-color: dodgerblue;
 }
 
-#call:hover{
+#call:hover {
     background-color: #2980B9;
 }
 
-#sms{
+#rubrica{
+    background-color: #2170a5;
+}
+
+#rubrica:hover{
+    background-color: #195278;
+}
+
+#sms {
     background-color: mediumseagreen;
 }
 
-#sms:hover{
+#sms:hover {
     background-color: #16A085;
 }
 
-button{
+#internet{
+    background-color: white;
+    border: 1px solid black;
+}
+#internet i {
+    color: red;
+}
+#internet:hover{
+    background-color: rgb(223, 218, 218);
+}
+
+#ricarica {
+    background-color: tomato;
+}
+
+#ricarica:hover {
+    background-color: red;
+}
+
+button {
     border-radius: 5px;
     border: 0px;
     cursor: pointer;
@@ -70,8 +141,199 @@ button i {
     color: white;
 }
 
-#widget{
+#widget {
     background-color: beige;
     border: 0px;
     border-radius: 5px;
+    align-self:flex-end;
+    margin: 30px 15px;
+    padding: 10px 10px;
+}
+
+/*///////////////////////////////////////////*/
+/* SCHERMATA START */
+
+#benv {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#start, #reset, .goBack, #unaRicarica, #add {
+    background-color: #15a387;
+    width: 30%;
+    align-self: center;
+    padding: 10px;
+}
+
+#start:hover,.goBack:hover {
+    background-color: #0d8169;
+}
+
+.mid2{
+    margin: 50px 15px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#nome,
+#email,
+#psw, #inptRicarica, #saldoSim, #addNome, #addTel, #addEmail{
+    width: 70%;
+}
+
+
+/*/////////////////////////////////////////*/
+/* SCHERMATA POWER */
+
+#powerOn {
+    font-size: 7rem;
+    color: red;
+    cursor: pointer;
+    align-self: center;
+}
+
+#powerOn:hover {
+    color: green;
+}
+
+/*////////////////////////////////////////////*/
+/* SCHERMATA SETTINGS */
+
+#schermataSettings, #schermataRicarica,#schermataRubrica, #schermataChiamate, #flexRub, #schermataMessaggi, #him, #schermataInternet{
+    flex-direction: column;
+}
+
+#reset, #unaRicarica{
+    background-color: red;
+}
+
+#reset:hover, #unaRicarica:hover{
+    background-color: maroon;
+}
+
+#inptRicarica, #addNome, #addTel, #addEmail{
+    align-self: center;
+}
+
+/*/////////////////////////////////////////////////*/
+/*SCHERMATA CHIAMATE*/
+
+
+#capRub{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#rubgb, #textgb{
+    width: 20%;   
+}
+
+#flexRub{
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.post{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.cNome, .cTel{
+    width: 33%;
+}
+
+.callBtn, #add{
+    width: 50px;
+    background-color: green;
+}
+
+.callBtn:hover, #add:hover{
+    background-color: rgb(0, 91, 0);
+}
+
+
+/*///////////////////////////////////////////////*/
+/*SCHERMATA MESSAGGI*/
+
+#headerChat{
+    gap: 80px;
+}
+
+#capChat{
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+#him{
+    height: 380px;
+    background-image: url(../img/bgChat.jpg);
+    background-size: contain;
+}
+
+#botChat{
+    gap: 10px;
+}
+#botChat i {
+    align-self: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#textMessage{
+    height: 20px;
+    width: 90%;
+}
+.ics{
+    rotate: 50deg;
+    color: red;
+    cursor: pointer;  
+}
+
+.flexTextIcs{
+    display: flex;
+}
+.text{
+    align-self: center;
+}
+
+.sent, .flexTextIcs{
+    background-color: rgb(50, 49, 49);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: 40%;
+    padding: 5px;
+}
+
+#him{
+    gap: 5px;
+    padding: 10px 5px;
+}
+
+.flexTextIcs{
+    justify-content: space-between;
+    align-self: flex-end;
+    background-color: rgb(1, 49, 1);
+}
+
+
+/*//////////////////////////////////////////////*/
+/*SCHERMATA INTERNET*/
+
+#schermataInternet{
+    gap: 10px;
+}
+#wifi{
+    opacity: 0;
+}
+img, #cerca, #cercaText{
+    align-self: center;
+}
+#cerca{
+    width: 30%;
+    background-color: rgb(200, 198, 198);
+}
+#cercaText{
+    width: 80%;
 }

@@ -11,31 +11,186 @@
 
 </head>
 <body>
-    <section id="container">
+    <section id="schermataMain">
     
-        <div id="top">
-            <p id="time"></p>
-            <p id="icons">
+        <div class="top">
+            <p class="time"></p>
+            <p class="icons">
             <i class="fa-solid fa-signal"></i>   
             <i class="fa-solid fa-wifi"></i>
             <i class="fa-solid fa-battery-three-quarters"></i>
             </p>
         </div>
-        <div id="mid" class="standard">
-            <p id="widget"></p>
+        <div id="mid">
+            <div id="widget">
+                <p id="nomeWidget"></p>
+                <p id="creditoResiduo"></p>
+            </div>
         </div>
         <div id="bot">
             <button id="call"><i class="fa-solid fa-phone"></i></button>
-
+            <button id="rubrica"><i class="fa-solid fa-address-book"></i></button>
+            <button id="ricarica"><i class="fa-solid fa-euro-sign"></i></button>
             <button id="sms"><i class="fa-regular fa-message"></i></button>
+            <button id="internet"><i class="fa-brands fa-google"></i></button>
+            <button id="settings"><i class="fa-solid fa-gear"></i></button>
         </div>
     
     </section>
 
+
+    <section id="schermataStart">
+        <div class="top">
+            <p class="time"></p>
+            <p class="icons">
+            <i class="fa-solid fa-signal"></i>   
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            </p>
+        </div>
+        <div class="mid2">
+            
+            <p id="benv">Benvenuto/a sul tuo nuovo dispositivo mobile!</p>
+            <input type="text" id="nome" placeholder="Inserisci il tuo nome...">
+            <input type="email" id="email" placeholder="Inserisci la tua email..." required>
+            <p id="pswContainer"><input type="password" id="psw" placeholder="Inserisci la tua password(min 3 caratteri)..."
+            minlength="3">
+            <input type="checkbox" id="showPsw" onclick="showPsw()">Mostra</p>
+            <input type="number" id="saldoSim" placeholder="Inserisci il saldo della tua sim...">
+            <p><i class="fa-solid fa-phone"></i>Potrai effettuare le chiamate a 0.20€ al minuto<br><i class="fa-regular fa-message"></i> Potrai inviare messaggi a 0.10€ al minuto<br><i class="fa-solid fa-euro-sign"></i> Potrai ricaricare il tuo telefono</p>
+            <button id="start">Inizia</button>
+            
+        </div>
+
+        
+    </section>
+
+    <section id="schermataPwr">
+            <i class="fa-solid fa-power-off" id="powerOn"></i>
+    </section>
+
+    <section id="schermataSettings">
+        <div class="top">
+            <p class="time"></p>
+            <p class="icons">
+            <i class="fa-solid fa-signal"></i>   
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            </p>
+        </div>
+        <div class="mid2">
+            <button id="reset">Ripristina</button>
+            <button class="goBack"><i class="fa-solid fa-arrow-left-long"></i></button>
+        </div>
+    </section>
+
+    <section id="schermataRicarica">
+        <div class="top">
+            <p class="time"></p>
+            <p class="icons">
+            <i class="fa-solid fa-signal"></i>   
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            </p>
+        </div>
+        <div class="mid2">
+            <label for="inptRicarica">Inserisci l'importo che vuoi caricare sulla tua sim:</label>
+            <input type="number" name="inptRicarica" id="inptRicarica">
+            <button id="unaRicarica">Ricarica!</button>
+            <button class="goBack"><i class="fa-solid fa-arrow-left-long"></i></button>
+        </div>
+    </section>
+
+    <section id="schermataRubrica">
+        <div class="top">
+            <p class="time"></p>
+            <p class="icons">
+            <i class="fa-solid fa-signal"></i>   
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            </p>
+        </div>
+        <div class="mid2" id="rubChiamate">
+            <div id="flexRub"><button class="goBack" id="rubgb"><i class="fa-solid fa-arrow-left-long"></i></button><p id="capRub">NON FUNZIONA</p>
+                <input type="text" id="addNome" placeholder="Nome&Cognome...">
+                <input type="email" id="addEmail" placeholder="Email...">
+                <input type="tel" id="addTel" placeholder="Numero di Telefono...">
+                <button id="add"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="schermataChiamate">
+        <div class="top">
+            <p class="time"></p>
+            <p class="icons">
+            <i class="fa-solid fa-signal"></i>   
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            </p>
+        </div>
+        <div class="mid2" id="listaContatti">
+            <div id="flexCall"><button class="goBack" id="callgb"><i class="fa-solid fa-arrow-left-long"></i></button><p id="capRub">Rubrica</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+
+    <section id="schermataMessaggi">
+        <div class="top">
+            <p class="time"></p>
+            <p class="icons">
+            <i class="fa-solid fa-signal"></i>   
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            </p>
+        </div>
+        <div class="mid2" id="flexChat">  
+            <div id="headerChat"> 
+            <button class="goBack" id="textgb"><i class="fa-solid fa-arrow-left-long"></i></button><p id="capChat">Marco</p>
+            </div>
+            <div id="him">
+                <p class="sent"></p>
+                <p class="sent"></p>
+            </div>
+            <div id="botChat">
+            <input id="textMessage" type="text"><i id="send" class="fa-solid fa-circle-arrow-up"></i>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="schermataInternet">
+        <div class="top">
+            <p class="time"></p>
+            <p class="icons">
+            <i class="fa-solid fa-signal"></i> 
+            <i class="fa-solid fa-wifi" id="wifi"></i>  
+            <i class="fa-solid fa-battery-three-quarters"></i>
+            </p>
+        </div>
+        <div class="mid2" id="google">
+            <img src="./img/google.png" width="250px">
+            <input type="text" id="cercaText">
+            <button id="cerca">Cerca</button>
+            </div>
+            <button class="goBack" id="googlegb"><i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+            <p id="secondis">NON FUNZIONA</p>
+        </div>
+
+    </section>
     
 
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11">
+    </script>
 
+    <script src="./modules/class.js"></script>
     <script src="./script.js"></script>
 </body>
 </html>
