@@ -1,30 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoComponent } from './pages/todo/todo.component';
 import { CompletedComponent } from './pages/completed/completed.component';
-import { HeaderComponent } from './sections/header/header.component';
+import { TodoComponent } from './pages/todo/todo.component';
 import { TodoAddComponent } from './pages/todo/todo-add/todo-add.component';
-import { TodoEditComponent } from './pages/todo/todo-edit/todo-edit.component';
 import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
+import { TodoEditComponent } from './pages/todo/todo-edit/todo-edit.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './sections/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent,
     CompletedComponent,
-    HeaderComponent,
+    TodoComponent,
     TodoAddComponent,
+    TodoListComponent,
     TodoEditComponent,
-    TodoListComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    [SweetAlert2Module.forRoot()]
   ],
   providers: [],
   bootstrap: [AppComponent]
