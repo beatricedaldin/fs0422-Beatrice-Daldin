@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import Swal from 'sweetalert2';
-import { ITodo } from './Models/todo';
+import { Todo } from './Models/todo';
 
 
 @Injectable({
@@ -12,10 +11,10 @@ export class TodosService{
   constructor(){}
 
    todosUrl:string = 'http://localhost:3000/todos'
-   todosArr:TodosService[] = []
+   
 
-   getAllPosts():Promise<TodosService[]>{
-    return new Promise<TodosService[]>((resolve) => {
+   getAllTodos():Promise<Todo[]>{
+    return new Promise<Todo[]>((resolve) => {
        setTimeout(() =>{
          let call = fetch(this.todosUrl).then(res => res.json())
          resolve(call)
@@ -23,23 +22,46 @@ export class TodosService{
    })
   }
 
-  addNewPost(todo:TodosService){
+  addNewTodo(todo:Todo):void{
     fetch(this.todosUrl, {
       method: 'POST',
-      body: JSON.stringify(todo)
+      body: JSON.stringify(todo),
+      headers:{
+        "content-type":"application/json"
+    }
     })
     .then(res => res.json())
-    .then(res => {
-      Swal.fire({
-          position: 'center',
-          icon: 'success',
-          title: 'Somenthing to do!',
-          text:`You just added something new to do!`,
-          showConfirmButton: false,
-          timer: 3000
-      })
+  }
+
+  completedTodo(todo:Todo):void{
+      fetch(this.todosUrl+'/'+todo.id,{
+      method: 'PUT',
+      body: JSON.stringify(todo),
+      headers:{
+          "content-type":"application/json"
+      }})
+      .then(res => res.json())
+  }
+
+  updateTodo(todo:Todo):void{
+    fetch(this.todosUrl+'/'+todo.id,{
+      method: 'PUT',
+      body: JSON.stringify(todo),
+      headers:{
+          "content-type":"application/json"
+      }
   })
+    .then(res => res.json())
   }
 
 
+  deleteTodo(todo:Todo):void{
+    fetch(this.todosUrl+'/'+todo.id,{
+    method: 'DELETE',
+    body: JSON.stringify(todo),
+    headers:{
+        "content-type":"application/json"
+    }})
+    .then(res => res.json())
+}
 }

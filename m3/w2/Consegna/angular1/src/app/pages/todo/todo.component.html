@@ -1,1 +1,11 @@
-<p>todo works!</p>
+<div *ngIf="todoArr.length == 0">We're getting your Tasks...</div>
+<ng-container *ngFor="let todo of todoArr">
+<div class="toDoContainer">
+    <p class="task" (click)="completed(todo)">{{todo.title}}</p>
+    <a (click)="delete(todo)">Delete</a>
+    <a [routerLink]="['edit', todo.id]">Edit</a>
+</div>
+</ng-container>
+
+<app-todo-add></app-todo-add>
+<router-outlet></router-outlet>
