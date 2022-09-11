@@ -1,9 +1,14 @@
 {
   "todos": [
     {
-      "title": "cheese",
+      "title": "hello",
       "completed": false,
       "id": 1
+    },
+    {
+      "title": "ciao",
+      "completed": true,
+      "id": 2
     }
   ]
 }

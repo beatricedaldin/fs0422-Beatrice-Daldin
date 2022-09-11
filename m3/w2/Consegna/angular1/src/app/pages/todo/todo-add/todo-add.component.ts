@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
 import Swal from 'sweetalert2';
+import { TodoComponent } from '../todo.component';
 
 @Component({
   selector: 'app-todo-add',
@@ -10,16 +11,16 @@ import Swal from 'sweetalert2';
 })
 export class TodoAddComponent implements OnInit {
 
-  constructor( private todoSvc:TodosService) { }
+  constructor( private todoSvc:TodosService, private todo:TodoComponent) { }
 
   newTodo: Todo = new Todo ('')
-
+  @Input() arrayTodo = []
 
   ngOnInit(): void {
   }
-
+  
+  
   save(){
-    console.log(this.newTodo)
     this.todoSvc.addNewTodo(this.newTodo)
     Swal.fire({
       position: 'center',
@@ -29,6 +30,8 @@ export class TodoAddComponent implements OnInit {
       showConfirmButton: false,
       timer: 3000
   })
+    this.todo.showingTodos()
+ 
   }
 
 

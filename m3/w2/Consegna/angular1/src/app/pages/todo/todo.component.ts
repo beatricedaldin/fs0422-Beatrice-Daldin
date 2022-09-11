@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
 import Swal from 'sweetalert2';
@@ -8,17 +8,22 @@ import Swal from 'sweetalert2';
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.scss']
 })
-export class TodoComponent implements OnInit {
+export class TodoComponent implements OnInit{
 
   constructor(private todoSvc:TodosService) { }
   todoArr: Todo[] = []
   
   ngOnInit(): void {
+    this.showingTodos()
+  }
+
+  showingTodos(){
     this.todoSvc.getAllTodos()
     .then(res => {
       this.todoArr = res
     })
   }
+
 
   completed(todo:Todo){
     if(todo.completed == false){
@@ -35,6 +40,15 @@ export class TodoComponent implements OnInit {
   
 } else {
   todo.completed = false
+  Swal.fire({
+    position: 'center',
+    icon: 'success',
+    title: 'Chuck it back',
+    text:`You've just chucked ${todo.title} back in the list!`,
+    showConfirmButton: false,
+    timer: 3000
+})
+this.todoSvc.completedTodo(todo)
 }
 
 
@@ -50,6 +64,9 @@ delete(todo:Todo){
     timer: 3000
 })
     this.todoSvc.deleteTodo(todo)
+    this.showingTodos()
 
 }
 }
+
+

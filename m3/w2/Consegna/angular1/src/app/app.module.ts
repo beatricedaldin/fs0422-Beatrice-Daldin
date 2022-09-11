@@ -10,6 +10,7 @@ import { TodoListComponent } from './pages/todo/todo-list/todo-list.component';
 import { TodoEditComponent } from './pages/todo/todo-edit/todo-edit.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './sections/header/header.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { HeaderComponent } from './sections/header/header.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    [SweetAlert2Module.forRoot()]
+    [SweetAlert2Module.forRoot(),
+    FontAwesomeModule,
+  ]
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
 import Swal from 'sweetalert2';
+import { TodoComponent } from '../todo.component';
 
 @Component({
   selector: 'app-todo-edit',
@@ -11,9 +12,9 @@ import Swal from 'sweetalert2';
 })
 export class TodoEditComponent implements OnInit {
 
-  constructor(private activeRoute:ActivatedRoute, private todoSvc:TodosService, private router:Router) { }
+  constructor(private activeRoute:ActivatedRoute, private todoSvc:TodosService, private router:Router, private todo:TodoComponent) { }
 
-  editingTodo!:Todo 
+  editingTodo!: Todo; 
 
   ngOnInit(): void {
     let todosUrl:string = 'http://localhost:3000/todos'
@@ -29,7 +30,7 @@ export class TodoEditComponent implements OnInit {
   })}
 
   editTodo(){
-    this.todoSvc.addNewTodo(this.editingTodo)
+    this.todoSvc.updateTodo(this.editingTodo)
     Swal.fire({
       position: 'center',
       icon: 'success',
@@ -38,6 +39,8 @@ export class TodoEditComponent implements OnInit {
       showConfirmButton: false,
       timer: 3000
   })
+  this.router.navigate(['/todos'])
+    this.todo.showingTodos()
   } 
  
 

@@ -7,12 +7,11 @@ import { TodoComponent } from './pages/todo/todo.component';
 const routes: Routes = [
   {path:'todos',
   component:TodoComponent,
+  children:[{path:'edit/:id',
+  component:TodoEditComponent}]
   },
   {path:'completed',
-  component:CompletedComponent},
-  {
-    path:'edit/:id',
-    component:TodoEditComponent}
+  component:CompletedComponent}
 ];
 
 @NgModule({
