@@ -1,0 +1,37 @@
+
+.disabled{
+    color: grey;
+    text-decoration: line-through;
+    font-style: italic;
+}
+.toDoContainer.disabledC{
+    box-shadow: none;
+    border: none;
+}
+
+#container{
+    width: 50vw;
+    border: 0px;
+    margin: 0 auto;
+}
+
+.toDoContainer{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 10px 0px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 0px 20px;
+}
+
+
+.icon, p{
+    cursor: pointer;
+}
+
+.icon{
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+

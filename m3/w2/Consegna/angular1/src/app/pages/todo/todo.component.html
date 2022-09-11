@@ -1,10 +1,12 @@
-<div *ngIf="todoArr.length == 0">We're getting your Tasks...</div>
+<div id="container"><div *ngIf="todoArr.length == 0">We're getting your Tasks...</div>
 <ng-container *ngFor="let todo of todoArr">
-<div class="toDoContainer">
-    <p class="task" (click)="completed(todo)">{{todo.title}}</p>
-    <a (click)="delete(todo)">Delete</a>
-    <a [routerLink]="['edit', todo.id]">Edit</a>
+<div class="toDoContainer" [ngClass] = "{'activeC': todo.completed==false, 'disabledC': todo.completed==true}">
+    <p class="task" (click)="completed(todo)" [ngClass] = "{'active': todo.completed==false, 'disabled': todo.completed==true}">{{todo.title}}</p>
+    <p>
+    <a (click)="delete(todo)"><fa-icon class="icon"  [icon]="faTrashCan"></fa-icon></a>
+    <a [routerLink]="['edit', todo.id]"><fa-icon class="icon" [icon]="faPenToSquare"></fa-icon></a></p>
 </div>
 </ng-container>
 <app-todo-add></app-todo-add>
 <router-outlet></router-outlet>
+</div>

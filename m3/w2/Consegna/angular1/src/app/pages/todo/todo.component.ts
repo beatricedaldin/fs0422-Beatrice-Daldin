@@ -1,7 +1,9 @@
 import { Component, OnInit} from '@angular/core';
+import { faTrashCan, faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
 import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-todo',
@@ -11,6 +13,10 @@ import Swal from 'sweetalert2';
 export class TodoComponent implements OnInit{
 
   constructor(private todoSvc:TodosService) { }
+
+  faTrashCan = faTrashCan
+  faPenToSquare = faPenToSquare
+
   todoArr: Todo[] = []
   
   ngOnInit(): void {
@@ -32,7 +38,7 @@ export class TodoComponent implements OnInit{
       position: 'center',
       icon: 'success',
       title: 'Task completed!',
-      text:`The task ${todo.title} has just been completed!`,
+      text:`The task '${todo.title}' has just been completed!`,
       showConfirmButton: false,
       timer: 3000
   })
@@ -44,7 +50,7 @@ export class TodoComponent implements OnInit{
     position: 'center',
     icon: 'success',
     title: 'Chuck it back',
-    text:`You've just chucked ${todo.title} back in the list!`,
+    text:`You've just chucked '${todo.title}' back in the list!`,
     showConfirmButton: false,
     timer: 3000
 })
@@ -59,7 +65,7 @@ delete(todo:Todo){
     position: 'center',
     icon: 'warning',
     title: 'Oh, no!',
-    text:`You've just deleted ${todo.title} from your tasks`,
+    text:`You've just deleted '${todo.title}' from your tasks`,
     showConfirmButton: false,
     timer: 3000
 })

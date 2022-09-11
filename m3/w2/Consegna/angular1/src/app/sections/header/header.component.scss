@@ -1,0 +1,30 @@
+
+
+#navbar{
+    width: 50vw;
+    border: 0px;
+    margin: 0 auto;
+    height: 15vh;
+    box-shadow: 5px 5px 15px 5px #000000;
+    background-image: linear-gradient(rgb(18, 201, 18), rgb(8, 114, 8));
+}
+
+#flexNavbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;   
+}
+
+a:hover{
+    color: black;
+}
+
+li{
+    list-style-type: none;
+}
