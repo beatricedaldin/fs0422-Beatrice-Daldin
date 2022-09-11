@@ -1,4 +1,4 @@
-<div id="container"><div *ngIf="todoArr.length == 0">We're getting your Tasks...</div>
+<div class="container"><div *ngIf="todoArr.length == 0" id="loading">We're getting your Tasks...</div>
 <ng-container *ngFor="let todo of todoArr">
 <div class="toDoContainer" [ngClass] = "{'activeC': todo.completed==false, 'disabledC': todo.completed==true}">
     <p class="task" (click)="completed(todo)" [ngClass] = "{'active': todo.completed==false, 'disabled': todo.completed==true}">{{todo.title}}</p>

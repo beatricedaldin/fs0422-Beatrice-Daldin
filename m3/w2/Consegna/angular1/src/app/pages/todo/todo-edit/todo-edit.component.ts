@@ -11,9 +11,9 @@ import { TodoComponent } from '../todo.component';
   styleUrls: ['./todo-edit.component.scss']
 })
 export class TodoEditComponent implements OnInit {
-
+  title :string ='Hey, you can Update your task here!'
   constructor(private activeRoute:ActivatedRoute, private todoSvc:TodosService, private router:Router, private todo:TodoComponent) { }
-
+  
   editingTodo!: Todo; 
 
   ngOnInit(): void {
@@ -29,7 +29,7 @@ export class TodoEditComponent implements OnInit {
     }
   })}
 
-  editTodo(){
+  editTodo(): void{
     this.todoSvc.updateTodo(this.editingTodo)
     Swal.fire({
       position: 'center',

@@ -1,9 +1,3 @@
 {
-  "todos": [
-    {
-      "title": "Portare fuori il cane",
-      "completed": false,
-      "id": 1
-    }
-  ]
+  "todos": []
 }
