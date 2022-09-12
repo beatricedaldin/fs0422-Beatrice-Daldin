@@ -14,13 +14,14 @@ export class TodoAddComponent implements OnInit {
   constructor( private todoSvc:TodosService, private todo:TodoComponent) { }
 
   newTodo: Todo = new Todo ('')
-  @Input() arrayTodo = []
-
+  emptyField = ''
+  
   ngOnInit(): void {
   }
   
   
   save(){
+    
     this.todoSvc.addNewTodo(this.newTodo)
     Swal.fire({
       position: 'center',

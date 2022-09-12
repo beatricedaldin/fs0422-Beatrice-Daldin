@@ -15,6 +15,7 @@ export class TodoEditComponent implements OnInit {
   constructor(private activeRoute:ActivatedRoute, private todoSvc:TodosService, private router:Router, private todo:TodoComponent) { }
   
   editingTodo!: Todo; 
+  emptyField = ''
 
   ngOnInit(): void {
     let todosUrl:string = 'http://localhost:3000/todos'

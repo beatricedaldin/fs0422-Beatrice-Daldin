@@ -1,1 +1,1 @@
-<input id="inpt" class="aTodo" type="text" placeholder="What's next?" [(ngModel)]="newTodo.title"><button id="add" class="btn" (click)="save()">+</button>
+<input id="inpt" class="aTodo" type="text" placeholder="What's next?" [(ngModel)]="newTodo.title" [(ngModel)]="emptyField"><button id="add" class="btn" (click)="save()" [disabled]="!emptyField">+</button>

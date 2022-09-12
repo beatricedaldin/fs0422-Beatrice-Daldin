@@ -1,7 +1,7 @@
 <div id="modal" [ngClass] ="'active'">
 <div id="updateContainer">
     <h3>{{title}}</h3>
-<input id="edit" class="aTodo" type="text" placeholder="You're editing your task..." [(ngModel)]="editingTodo.title"><button class="btn" id="update" (click)="editTodo()">update</button>
+<input [(ngModel)] = 'emptyField' id="edit" class="aTodo" type="text" placeholder="You're editing your task..." [(ngModel)]="editingTodo.title"><button class="btn" id="update" (click)="editTodo()" [disabled] = '!emptyField'>update</button>
 
 </div>
 

@@ -32,7 +32,7 @@ export class CompletedComponent implements OnInit {
       position: 'center',
       icon: 'success',
       title: 'Task completed!',
-      text:`The task ${todo.title} has just been completed!`,
+      text:`The task '${todo.title}' has just been completed!`,
       showConfirmButton: false,
       timer: 3000
   })
@@ -44,7 +44,7 @@ export class CompletedComponent implements OnInit {
     position: 'center',
     icon: 'success',
     title: 'Chuck it back',
-    text:`You've just chucked ${todo.title} back in the list!`,
+    text:`You've just chucked '${todo.title}' back in the list!`,
     showConfirmButton: false,
     timer: 3000
 })

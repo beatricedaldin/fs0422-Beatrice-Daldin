@@ -29,5 +29,11 @@
 #update{
     border-radius: 10px;
     width: 6vw;
+    background-color: rgba(238, 152, 4, 0.981);
+}
+
+#edit:focus{
+    border: 0px;
+    outline: 3px solid rgba(238, 152, 4, 0.981);
 }
 

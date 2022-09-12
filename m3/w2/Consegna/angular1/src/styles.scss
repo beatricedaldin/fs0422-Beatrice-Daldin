@@ -14,7 +14,7 @@ h1, h3{
 }
 
 .btn{
-    
+    border: 0px;
     height: 6vh;
     margin-left: 5px;
     cursor: pointer;
@@ -40,4 +40,8 @@ h1, h3{
     margin: 20px 0px;
     box-shadow: 5px 5px 15px 5px #000000;
     padding: 0px 20px;
+}
+
+.icon, p{
+    cursor: pointer;
 }

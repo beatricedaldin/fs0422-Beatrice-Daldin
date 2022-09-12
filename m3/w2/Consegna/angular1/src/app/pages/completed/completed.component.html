@@ -1,7 +1,7 @@
 <div class="container">
     <div class="loading" *ngIf="todoArr.length == 0">We're getting your completed Tasks...</div>
 <ng-container *ngFor="let todo of todoArr">
-<div class="toDoContainer">
+<div class="toDoContainer" id="completedOne">
     <p class="task" (click)="completed(todo)">{{todo.title}}</p>
 </div>
 </ng-container>
