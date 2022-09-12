@@ -2,7 +2,7 @@
 <div id="updateContainer">
     <h3>{{title}}</h3>
 <input [(ngModel)] = 'emptyField' id="edit" class="aTodo" type="text" placeholder="You're editing your task..." [(ngModel)]="editingTodo.title"><button class="btn" id="update" (click)="editTodo()" [disabled] = '!emptyField'>update</button>
-
+<button id="close" class="btn" (click)="close()"><fa-icon class="icon" id="ics" [icon]="faXmark"></fa-icon></button>
 </div>
 
 </div>

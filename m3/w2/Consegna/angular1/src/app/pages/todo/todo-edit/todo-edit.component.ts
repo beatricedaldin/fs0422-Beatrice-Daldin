@@ -4,6 +4,7 @@ import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
 import Swal from 'sweetalert2';
 import { TodoComponent } from '../todo.component';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-todo-edit',
@@ -16,6 +17,7 @@ export class TodoEditComponent implements OnInit {
   
   editingTodo!: Todo; 
   emptyField = ''
+  faXmark = faXmark
 
   ngOnInit(): void {
     let todosUrl:string = 'http://localhost:3000/todos'
@@ -43,6 +45,10 @@ export class TodoEditComponent implements OnInit {
   this.router.navigate(['/todos'])
     this.todo.showingTodos()
   } 
+
+  close():void{
+    this.router.navigate(['/todos'])
+  }
  
 
 }
