@@ -25,7 +25,7 @@ export class TodoAddComponent implements OnInit {
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Somenthing to do!',
+      title: 'Something to do!',
       text:`You just added something new to do!`,
       showConfirmButton: false,
       timer: 3000

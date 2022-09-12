@@ -10,10 +10,11 @@ h1, h3{
 .aTodo{
     width: 30vw;
     height: 5vh;
+    border-radius: 10px;
 }
 
 .btn{
-    width: 8vw;
+    
     height: 6vh;
     margin-left: 5px;
     cursor: pointer;
@@ -24,4 +25,19 @@ h1, h3{
     border: 0px;
     margin: 0 auto;
     border-radius: 5px;
+}
+
+.loading{
+    text-align: center;
+    margin: 60px 0px;
+    font-size: 2rem;
+}
+
+.toDoContainer{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    margin: 20px 0px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    padding: 0px 20px;
 }

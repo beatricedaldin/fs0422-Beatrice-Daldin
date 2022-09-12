@@ -1,3 +1,24 @@
 {
-  "todos": []
+  "todos": [
+    {
+      "title": "Portare fuori il cane",
+      "completed": true,
+      "id": 1
+    },
+    {
+      "title": "Studiare",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "title": "Fare Benzina",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "title": "Fare la spesa",
+      "completed": true,
+      "id": 4
+    }
+  ]
 }

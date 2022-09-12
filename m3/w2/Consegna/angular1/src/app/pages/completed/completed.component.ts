@@ -48,5 +48,7 @@ export class CompletedComponent implements OnInit {
     showConfirmButton: false,
     timer: 3000
 })
+this.todoSvc.completedTodo(todo)
 }
+  this.showingAllCompleted()
   }}

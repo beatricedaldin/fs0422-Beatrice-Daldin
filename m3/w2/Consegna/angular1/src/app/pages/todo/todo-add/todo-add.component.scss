@@ -1,0 +1,26 @@
+#add{
+    background-color: rgb(1, 170, 1);
+    border-radius: 50%;
+    border: 0px;
+    position: absolute;
+    top: 17%;
+    left: 49%;
+    font-weight:600;
+    font-size: 1.5rem;
+    width: 3vw;
+}
+
+#add:hover {
+    background-color: rgb(2, 139, 2);
+}
+
+#inpt{
+    position: absolute;
+    top: 25%;
+    left: 36%;
+}
+
+#inpt:focus{
+    border: 0px;
+    outline: 3px solid rgb(1, 170, 1);
+}

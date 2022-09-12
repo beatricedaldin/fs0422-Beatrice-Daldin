@@ -15,14 +15,7 @@
     margin: 0 auto;
 }
 
-.toDoContainer{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    margin: 10px 0px;
-    box-shadow: 5px 5px 15px 5px #000000;
-    padding: 0px 20px;
-}
+
 
 
 .icon, p{
@@ -34,9 +27,14 @@
     margin-right: 15px;
 }
 
-#loading{
-    text-align: center;
-    margin: 20px 0px;
+#trash{
+    color: red;
 }
+
+#pen{
+    color: rgba(238, 152, 4, 0.981);
+}
+
+
 
 
