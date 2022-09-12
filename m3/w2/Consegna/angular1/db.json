@@ -19,6 +19,16 @@
       "title": "Fare la spesa",
       "completed": true,
       "id": 4
+    },
+    {
+      "title": "Estetista",
+      "completed": false,
+      "id": 5
+    },
+    {
+      "title": "Aperitivo con MariaK",
+      "completed": false,
+      "id": 6
     }
   ]
 }

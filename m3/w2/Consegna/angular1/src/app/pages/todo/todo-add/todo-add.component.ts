@@ -32,7 +32,7 @@ export class TodoAddComponent implements OnInit {
       timer: 3000
   })
     this.todo.showingTodos()
- 
+    this.emptyField = ''
   }
 
 
