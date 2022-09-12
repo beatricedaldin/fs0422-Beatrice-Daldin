@@ -28,7 +28,7 @@ export class TodoEditComponent implements OnInit {
     if(todo){
       this.editingTodo = todo
     }else{
-      this.router.navigate(['/todos'])
+      this.router.navigate(['/'])
     }
   })}
 
@@ -42,12 +42,12 @@ export class TodoEditComponent implements OnInit {
       showConfirmButton: false,
       timer: 3000
   })
-  this.router.navigate(['/todos'])
+  this.router.navigate(['/'])
     this.todo.showingTodos()
   } 
 
   close():void{
-    this.router.navigate(['/todos'])
+    this.router.navigate(['/'])
   }
  
 
