@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Todo } from 'src/app/Models/todo';
 import { TodosService } from 'src/app/todos.service';
 import Swal from 'sweetalert2';
+import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-completed',
@@ -15,6 +16,8 @@ export class CompletedComponent implements OnInit {
   ngOnInit(): void {
     this.showingAllCompleted()
   }
+
+  faCircleCheck = faCircleCheck
 
   showingAllCompleted(){
     this.todoSvc.getAllTodos()

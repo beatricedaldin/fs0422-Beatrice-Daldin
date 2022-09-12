@@ -5,7 +5,7 @@ import { TodoEditComponent } from './pages/todo/todo-edit/todo-edit.component';
 import { TodoComponent } from './pages/todo/todo.component';
 
 const routes: Routes = [
-  {path:'todos',
+  {path:'',
   component:TodoComponent,
   children:[{path:'edit/:id',
   component:TodoEditComponent}]
