@@ -1,0 +1,20 @@
+<form>
+
+    <input type="email" placeholder="email"
+    class="form-control" [(ngModel)]="user.email"
+    name="email">
+    <input type="text" class="form-control" [(ngModel)]="user.password"
+    name="password" placeholder="password">
+    <button *ngIf="formAction == 'create'" (click)="add()" class="btn btn-primary">Aggiungi user</button>
+    <button *ngIf="formAction == 'edit'" (click)="edit()" class="btn btn-secondary">Modifica</button>
+  
+  </form>
+
+
+  <div class="card" style="width: 18rem;" *ngFor="let user of users">
+    <div class="card-body">
+      <h5 class="card-title">{{user.email}}</h5>
+      <a (click)="select(user)" class="btn btn-warning">Modifica</a>
+      <a (click)="delete(user)" class="btn btn-danger">Cancella</a>
+    </div>
+  </div>

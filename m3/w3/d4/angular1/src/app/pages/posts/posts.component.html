@@ -1,0 +1,21 @@
+<form>
+
+    <input type="text" placeholder="title"
+    class="form-control" [(ngModel)]="post.title"
+    name="title">
+    <textarea class="form-control" [(ngModel)]="post.content"
+    name="content" placeholder="content"></textarea>
+    <button *ngIf="formAction == 'create'" (click)="add()" class="btn btn-primary">Aggiungi post</button>
+    <button *ngIf="formAction == 'edit'" (click)="edit()" class="btn btn-secondary">Modifica</button>
+  
+  </form>
+
+
+  <div class="card" style="width: 18rem;" *ngFor="let post of posts">
+    <div class="card-body">
+      <h5 class="card-title">{{post.title}}</h5>
+      <p class="card-text">{{post.content}}</p>
+      <a (click)="select(post)" class="btn btn-warning">Modifica</a>
+      <a (click)="delete(post)" class="btn btn-danger">Cancella</a>
+    </div>
+  </div>

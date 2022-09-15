@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "gavyzetile@mailinator.com",
+      "password": "$2a$10$YxEZeBWvYwVaBf/xidYIRO3srgakIEG1Fcs//EzJwZYjGTon3b/Zi",
+      "id": 1
+    }
+  ],
+  "posts": [
+    {
+      "title": "Amet aute praesenti",
+      "content": "Adipisci tempor porr",
+      "id": 1
+    }
+  ]
+}
