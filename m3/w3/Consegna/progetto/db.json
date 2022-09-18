@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "email": "qetexipyci@mailinator.com",
+      "password": "$2a$10$NILrSRwA195jOuA8g/s1.eKsBrFTy4.j5KzPtNn7.ARfXbtma0fgO",
+      "username": "japax",
+      "id": 1
+    },
+    {
+      "email": "qoqyzy@mailinator.com",
+      "password": "$2a$10$dkIX8x9laKd37dX.YqK56eJmuVIyJEGd067Hizx/mAchH9X0vr9z6",
+      "username": "lyjumyw",
+      "id": 2
+    },
+    {
+      "email": "rujun@mailinator.com",
+      "password": "$2a$10$FL7kont62FnVtLWkt2k36uu6LtAnQJ5dp6wP1ZUZvnHvwqYhQUhue",
+      "username": "zewapohek",
+      "id": 3
+    },
+    {
+      "email": "goxico@mailinator.com",
+      "password": "$2a$10$m8in/9kCqs37KbpCq89M5.5mxk0EEfJMW.ebfnYU.bKrpzTAwkRgy",
+      "username": "fewetif",
+      "role": null,
+      "id": 4
+    },
+    {
+      "email": "pakaj@mailinator.com",
+      "password": "$2a$10$ooGpbxqUYYajAHYsipvnIOioQFNnU8QluW5vbdN3EW/DAHCNvqJKu",
+      "username": "sivowox",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "email": "cipewykabo@mailinator.com",
+      "password": "$2a$10$0IeFlMzT1OzMCsTZnDvYH.nEMJ5VBuz3jBDlfmAKa.ztEa3SetaJq",
+      "username": "bygylu",
+      "role": "user",
+      "id": 6
+    }
+  ],
+  "posts": []
+}
