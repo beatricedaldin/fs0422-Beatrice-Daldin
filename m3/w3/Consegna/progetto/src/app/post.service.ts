@@ -11,4 +11,7 @@ export class PostService extends GenericCrudService<Post>{
   constructor(private http:HttpClient) {
     super(http, 'http://localhost:3000/posts')
    }
-}
+
+  }
+
+

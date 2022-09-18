@@ -5,17 +5,17 @@
         <label for="username" class="form-label">Username</label>
         <input type="text" class="form-control" formControlName="username" id="username">
       </div>
-      <p *ngIf="checkFullValidity('username')">Il campo username deve contenere almeno tre lettere</p>
+      <p *ngIf="checkFullValidity('username')">The username should be, at least, 3 characters!</p>
     <div class="mb-3">
       <label for="email" class="form-label">Email</label>
       <input type="email" class="form-control" id="email" formControlName="email">
     </div>
-    <p *ngIf="checkFullValidity('email')">Il campo email deve contenere una email corretta</p>
+    <p *ngIf="checkFullValidity('email')">The email should be a true one!</p>
     <div class="mb-3">
       <label for="password" class="form-label">Password</label>
       <input type="password" class="form-control" id="password" formControlName="password">
     </div>
-    <p *ngIf="checkFullValidity('password')">Il campo password deve contenere almeno otto caratteri</p>
+    <p *ngIf="checkFullValidity('password')">The password should be, at least, 8 characters!</p>
     <div class="mb-3">
         <input [hidden]="true" type="text" class="form-control" formControlName="role">
       </div>

@@ -14,7 +14,7 @@
 
       <div class="text-end">
         <h5 *ngIf="this.logged== true">Welcome back, <a href="">{{this.userLogged[1]}} </a></h5>
-        <button *ngIf="this.logged== true" class="btn btn-danger">Logout</button>
+        <button (click)="logout()" *ngIf="this.logged== true" class="btn btn-danger">Logout</button>
         <a [routerLink]="['/login']" *ngIf="this.logged== false" class="btn btn-outline-light me-2">Login</a>
         <a [routerLink]="['/signup']" *ngIf="this.logged== false" class="btn btn-warning">Sign-up</a>
       </div>

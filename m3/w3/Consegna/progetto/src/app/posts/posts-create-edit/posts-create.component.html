@@ -1,0 +1,26 @@
+<form class="mb-5 mt-5">
+    <input class="form-control" type="text"
+    [(ngModel)]="newPost.title"
+    name="title" placeholder="Title">
+  
+    <textarea class="form-control"
+    [(ngModel)]="newPost.content"
+    name="content" placeholder="Your content"></textarea>
+  
+    <button *ngIf="formAction == 'create'" (click)="save()" class="btn btn-primary">Add a new post</button>
+    <button *ngIf="formAction == 'edit'" (click)="edit()" class="btn btn-primary">Edit this post</button>
+  </form>
+
+
+  <div class="card" style="width: 18rem;" *ngFor="let mine of mines">
+    <div class="card-body">
+      <h5 class="card-title">{{mine.title}}</h5>
+      <p class="card-text">{{mine.content}}</p>
+      <p class="card-text">{{mine.username}}</p>
+      <p class="card-text">{{mine.date}}</p>
+      <a (click)="select(mine)" class="btn btn-warning">Edit</a>
+      <a (click)="delete(mine)" class="btn btn-danger">Delete</a>
+    </div>
+  </div>
+
+

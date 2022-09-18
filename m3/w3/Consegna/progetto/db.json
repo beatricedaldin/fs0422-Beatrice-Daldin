@@ -38,7 +38,57 @@
       "username": "bygylu",
       "role": "user",
       "id": 6
+    },
+    {
+      "email": "beadaldin@gmail.com",
+      "password": "$2a$10$.MJ1Ph881XOvUHxf4aOW7uY4ltBH9H2IeSNAX5jlg2gejsOnAWlMS",
+      "username": "beatrice",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "email": "dico@mailinator.com",
+      "password": "$2a$10$GD9VEQyQ3k31UG23iLCuE.M21mnML4eu4q6W8j/YeIItIkWcCe4Va",
+      "username": "zecinacyno",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "email": "korova@mailinator.com",
+      "password": "$2a$10$02Q7qm6bLNuqUkFDuNFBzOLuwux/FtjdJWZI7/VlPccp2IWp/GbGe",
+      "username": "mykoz",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "email": "vamu@mailinator.com",
+      "password": "$2a$10$7v6Mekh/x.VFAeTfh0PG1eU7J4Q2dbEV.NoI766RKKMMb01.FIMB.",
+      "username": "sociwy",
+      "role": "user",
+      "id": 10
+    },
+    {
+      "email": "wepuq@mailinator.com",
+      "password": "$2a$10$GpOUORPG79jdapo1A9LAS.eOWmOtJQKP7lVGUWldmbGgmjQIYWT6m",
+      "username": "dudika",
+      "role": "user",
+      "id": 11
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "title": "Est rerum sed id re",
+      "content": "Anim id maxime su",
+      "date": "2022-09-18T22:44:35.495Z",
+      "username": "dudika",
+      "id": 1
+    },
+    {
+      "title": "Magnam laudantium h",
+      "content": "Possimus amet exce",
+      "date": "2022-09-18T22:45:45.716Z",
+      "username": "sociwy",
+      "id": 2
+    }
+  ]
 }

@@ -1,8 +1,7 @@
-import { JsonPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from './auth.service';
-import { User } from './users/user';
+
 
 @Component({
   selector: 'app-root',
@@ -15,7 +14,8 @@ export class AppComponent implements OnInit {
     userLogged!: string[]
 
 
-    constructor(private authSvc:AuthService){
+
+    constructor(private authSvc:AuthService, private router:Router){
       this.logged = authSvc.isLogged()
       if(localStorage.length==1){
       this.userLogged = Object.values(authSvc.getLogged())}
@@ -28,8 +28,10 @@ export class AppComponent implements OnInit {
     this.userLogged[1]}
   }
 
-
-
+  logout(){
+    this.authSvc.logOut()
+    this.router.navigate([''])
+  }
 
   isCollapsed = false;
 }

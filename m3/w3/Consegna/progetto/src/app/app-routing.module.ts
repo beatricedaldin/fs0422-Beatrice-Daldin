@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
-import { ForumListComponent } from './forum/forum-list/forum-list.component';
+import { PostsCreateComponent } from './posts/posts-create-edit/posts-create.component';
 import { PostsListComponent } from './posts/posts-list/posts-list.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 
@@ -18,7 +18,7 @@ const routes: Routes = [
   {path:'signup',
   component: SignupComponent},
   {path:'forum',
-  component: ForumListComponent,
+  component: PostsCreateComponent,
   canActivate: [AuthGuard]}
   
 ];
