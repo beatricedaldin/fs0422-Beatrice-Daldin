@@ -9,9 +9,10 @@ import { PostsListComponent } from './posts/posts-list/posts-list.component';
 import { UsersListComponent } from './users/users-list/users-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthModule } from './auth/auth.module';
-import { UsersItemComponent } from './users/users-item/users-item.component';
 import { PostsItemComponent } from './posts/posts-item/posts-item.component';
 import { PostsCreateComponent } from './posts/posts-create-edit/posts-create.component';
+import { HomeComponent } from './sections/home/home.component';
+import { HeaderComponent } from './sections/header/header.component';
 
 
 @NgModule({
@@ -19,9 +20,10 @@ import { PostsCreateComponent } from './posts/posts-create-edit/posts-create.com
     AppComponent,
     PostsListComponent,
     UsersListComponent,
-    UsersItemComponent,
     PostsItemComponent,
-    PostsCreateComponent
+    PostsCreateComponent,
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,9 @@
-<form class="mb-5 mt-5">
-    <input class="form-control" type="text"
+<form class="my-5 mx-5">
+    <input class="form-control my-2" type="text"
     [(ngModel)]="newPost.title"
     name="title" placeholder="Title">
   
-    <textarea class="form-control"
+    <textarea class="form-control my-2"
     [(ngModel)]="newPost.content"
     name="content" placeholder="Your content"></textarea>
   
@@ -12,7 +12,7 @@
   </form>
 
 
-  <div class="card" style="width: 18rem;" *ngFor="let mine of mines">
+  <div class="card my-3 mx-5" *ngFor="let mine of mines">
     <div class="card-body">
       <h5 class="card-title">{{mine.title}}</h5>
       <p class="card-text">{{mine.content}}</p>

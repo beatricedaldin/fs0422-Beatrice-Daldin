@@ -17,4 +17,12 @@ export class UsersListComponent implements OnInit {
     this.userSvc.getAll().subscribe(users => this.users = users)
   }
 
+  delete(id:number | undefined){
+    
+    this.userSvc.delete(id).subscribe(res => {
+      let index = this.users.findIndex(u => u.id === id)
+      this.users.splice(index,1)
+      
+    })
+  }
 }

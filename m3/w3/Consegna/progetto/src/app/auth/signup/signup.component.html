@@ -1,23 +1,23 @@
 <h4>Signup in our Community and get started!</h4>
 
 <form [formGroup] = "form" (ngSubmit)="add()">
-    <div class="mb-3">
+    <div class="mb-3 mx-5">
         <label for="username" class="form-label">Username</label>
         <input type="text" class="form-control" formControlName="username" id="username">
       </div>
-      <p *ngIf="checkFullValidity('username')">The username should be, at least, 3 characters!</p>
-    <div class="mb-3">
+      <p *ngIf="checkFullValidity('username')" class="mx-5">The username should be, at least, 3 characters!</p>
+    <div class="mb-3 mx-5">
       <label for="email" class="form-label">Email</label>
       <input type="email" class="form-control" id="email" formControlName="email">
     </div>
-    <p *ngIf="checkFullValidity('email')">The email should be a true one!</p>
-    <div class="mb-3">
+    <p *ngIf="checkFullValidity('email')" class="mx-5">The email should be a true one!</p>
+    <div class="mb-3 mx-5">
       <label for="password" class="form-label">Password</label>
       <input type="password" class="form-control" id="password" formControlName="password">
     </div>
-    <p *ngIf="checkFullValidity('password')">The password should be, at least, 8 characters!</p>
-    <div class="mb-3">
+    <p *ngIf="checkFullValidity('password')" class="mx-5">The password should be, at least, 8 characters!</p>
+    <div class="mb-3 mx-5">
         <input [hidden]="true" type="text" class="form-control" formControlName="role">
       </div>
-    <button class="btn btn-primary">Sign-up</button>
+    <button class="btn btn-primary mx-5">Sign-up</button>
   </form>

@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { AuthService } from './auth.service';
+import { Component, OnInit} from '@angular/core';
+
 
 
 @Component({
@@ -10,28 +9,16 @@ import { AuthService } from './auth.service';
 })
 export class AppComponent implements OnInit {
 
-    logged: boolean
-    userLogged!: string[]
 
 
 
-    constructor(private authSvc:AuthService, private router:Router){
-      this.logged = authSvc.isLogged()
-      if(localStorage.length==1){
-      this.userLogged = Object.values(authSvc.getLogged())}
-    }
-
-
-  ngOnInit(): void {
-    this.logged
-    if(localStorage.length==1){
-    this.userLogged[1]}
+  constructor(){
+  
   }
 
-  logout(){
-    this.authSvc.logOut()
-    this.router.navigate([''])
-  }
 
-  isCollapsed = false;
+ngOnInit(): void {
+  
+}
+  
 }

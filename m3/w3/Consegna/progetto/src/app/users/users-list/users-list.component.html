@@ -1,3 +1,3 @@
 <ul class="list-group">
-    <app-users-item *ngFor="let user of users" [username]="user.username"></app-users-item>
+  <li class="list-group-item mb-2 mt-2" *ngFor="let user of users">{{user.username}} <button (click)="delete(user.id)" class="btn btn-danger">Delete your Profile</button></li>
   </ul>
