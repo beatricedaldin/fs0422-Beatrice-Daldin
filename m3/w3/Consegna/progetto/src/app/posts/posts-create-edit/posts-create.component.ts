@@ -3,7 +3,6 @@ import { AuthService } from 'src/app/auth.service';
 import { PostService } from 'src/app/post.service';
 import { Post } from '../post';
 import Swal from 'sweetalert2';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-posts-create',
@@ -14,7 +13,7 @@ export class PostsCreateComponent implements OnInit {
   
   
 
-  constructor(private authSvc:AuthService, private postSvc:PostService, private router:Router) { }
+  constructor(private authSvc:AuthService, private postSvc:PostService) { }
 
   mines: Post[] = []
   s: string[]  = Object.values(this.authSvc.getLogged())
