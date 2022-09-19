@@ -52,8 +52,7 @@ export class AuthService {
 
   logOut(){
     localStorage.removeItem('access')
-    this.router.navigate(['/header'])
-    this.router.navigate(['/home'])
+    this.router.navigate([''])
   }
 
 }

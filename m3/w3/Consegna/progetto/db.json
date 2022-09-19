@@ -4,7 +4,7 @@
       "email": "beadaldin@gmail.com",
       "password": "$2a$10$2bjSGQBztmUfpm8CkPejHuYN3aHj6rETZHHirFXbpnwU7agrNxjQC",
       "username": "brododipollo",
-      "role": "admin",
+      "role": "user",
       "id": 1
     },
     {
@@ -13,6 +13,13 @@
       "username": "gesù",
       "role": "user",
       "id": 2
+    },
+    {
+      "email": "leone@gmail.com",
+      "password": "$2a$10$QlOSJIwxJXTs12La72.f1eLrlRMFjZtApNCZR777d3MfxBN7G/9Zq",
+      "username": "leoneIlCaneFifone",
+      "role": "user",
+      "id": 3
     }
   ],
   "posts": [
@@ -50,6 +57,13 @@
       "date": "2022-09-19T00:19:54.925Z",
       "username": "gesù",
       "id": 6
+    },
+    {
+      "title": "AAAAAAAAAAAAAAAAAAAAAAAh",
+      "content": "Giustino e Marilù",
+      "date": "2022-09-19T01:58:30.597Z",
+      "username": "leoneIlCaneFifone",
+      "id": 7
     }
   ]
 }

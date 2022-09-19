@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
     this.authSvc.login(this.data)
     .subscribe(res=>{ 
         this.authSvc.saveAccessData(res)
-        this.router.navigate(['/home']);
+        this.router.navigate(['']);
     })
   }
 
