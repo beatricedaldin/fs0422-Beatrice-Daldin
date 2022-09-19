@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
     password: ''
   }
 
-
+ //Le passwords sono tutte 'Pa$$w0rd!'
   save(){
     this.authSvc.login(this.data)
     .subscribe(res=>{ 
