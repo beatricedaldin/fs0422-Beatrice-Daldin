@@ -1,7 +1,6 @@
 package it.epicode.be;
 
 import java.util.Arrays;
-
 public class Helloworld {
 
 public static void main (String[] args)
