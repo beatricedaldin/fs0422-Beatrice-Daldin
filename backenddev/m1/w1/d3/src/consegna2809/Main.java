@@ -16,7 +16,7 @@ public class Main {
 		int s;
 		System.out.println("Inserisci un numero per il conto alla rovescia:");
 		s = scanner.nextInt();
-		System.out.println(contoAllaRovescia(s));
+		
 	}
 
 	public static boolean pariDispari(String x) {
@@ -46,13 +46,6 @@ public class Main {
 			System.out.println("Errore:il numero è maggiore di tre!");
 		
 		
-		}
-	}
-	
-	
-	public static int contoAllaRovescia(int x) {
-		for(int i = x; i>=0; i--) {
-			System.out.println(i);
 		}
 		
 	}
