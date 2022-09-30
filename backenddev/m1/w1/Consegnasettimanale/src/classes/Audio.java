@@ -8,16 +8,19 @@ import interfacesAbstract.Volume;
 public class Audio extends ElementoMultimediale implements Volume {
 	private int volume;
 	private int time;
-	final protected String type;
 	
-	public Audio(String title, int v, int t){
-		super(title);
+	
+	public Audio(String title, int v, int t, String type){
+		super(title, type);
 		this.volume = v;
 		this.time=t;
-		this.type = "audio";
+		
 	}
 	public String getType() {
 		return this.type;
+	}
+	public String toString() {
+		return "{"+type+ " : "+ title+" "+ " minuti: "+time+ " volume: " + volume+"}";
 	}
 	
 	@Override

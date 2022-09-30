@@ -34,7 +34,7 @@ public class Main {
                     startB = in.nextInt();
                     in.nextLine();
                     if(startB>=0 && startB<=100) {
-                    arr[i] = new Image(title, startB);
+                    arr[i] = new Image(title, startB, "image");
                     flag = false;}
                     else {
                     System.out.println("Il valore inserito non è valido!");
@@ -51,7 +51,7 @@ public class Main {
                     time = in.nextInt();
                     in.nextLine();
                     if(startV>=0 && startV<=100) {
-                    arr[i] = new Audio(title, startV, time);
+                    arr[i] = new Audio(title, startV, time, "audio");
                     flag = false;}
                     else {
                     	System.out.println("Il valore Volume inserito non è valido!");
@@ -72,7 +72,7 @@ public class Main {
                     startV = in.nextInt();
                     in.nextLine();
                     if(startV>=0 && startV<=100 && startB>=0 && startB<=100) {
-                    arr[i] = new Video(title, startB, startV, time);
+                    arr[i] = new Video(title, startB, startV, time, "video");
                     flag = false;}
                     else {
                     	System.out.println("Uno dei due valori inseriti (Volume o Luminosità) non sono validi!");
@@ -113,18 +113,55 @@ public class Main {
             	System.out.println("Uscito!");
             	System.exit(1);
             }
-        else {
-
-             ((Image) arr[choice - 1]).start();
-             ((Audio) arr[choice - 1]).start();
-             ((Video) arr[choice - 1]).start();
-            System.out.println("Vuoi modificare qualcosa del file multimediale? [Y/N]");
+        else if (choice>0 && choice <6) {
+        	
+        	if(arr[choice-1].getType()=="image") {
+             ((Image) arr[choice - 1]).start();}
+        	else if(arr[choice-1].getType()=="audio") {
+             ((Audio) arr[choice - 1]).start();}
+        	else if(arr[choice-1].getType()=="video") {
+             ((Video) arr[choice - 1]).start();}
+            System.out.println("Vuoi modificare qualcosa del file multimediale? [y/n]");
             String yn = in.nextLine();
-            if (yn.equals("Y"))
-            ((Image) arr[choice - 1]).edit(in);
-            ((Audio) arr[choice - 1]).edit(in);
-            ((Video) arr[choice - 1]).edit(in);
-        } 
+            if (yn.equals("y"))
+            	if(arr[choice-1].getType()=="image") {
+                    ((Image) arr[choice - 1]).edit(in);
+                    System.out.println(((Image) arr[choice - 1]).toString());}
+            
+               	else if(arr[choice-1].getType()=="audio") {
+                    ((Audio) arr[choice - 1]).edit(in);
+                    System.out.println(((Audio) arr[choice - 1]).toString());}
+               	else if(arr[choice-1].getType()=="video") {
+                    ((Video) arr[choice - 1]).edit(in);
+                    System.out.println(((Video) arr[choice - 1]).toString());}
+        } else if(choice>6) {
+        	System.out.println("Il valore inserito non è valido!");
+        	System.out.println("===MENU===");
+            System.out.println("Scegli un elemento multimediale da 1-5, utilizza lo 0 per uscire, utilizza il 6 per vedere nel dettaglio tutti i tuoi file!");
+            for (int i = 0; i < 5; i++) {
+
+                System.out.println((i + 1) + "." + arr[i].getTitle());
+            }
+           
+            System.out.println("=============");
+
+            choice = in.nextInt();
+            in.nextLine();
+        } else if (choice == 6) {
+        	System.out.println(Arrays.toString(arr));
+        	System.out.println("===MENU===");
+            System.out.println("Scegli un elemento multimediale da 1-5, utilizza lo 0 per uscire, utilizza il 6 per vedere nel dettaglio tutti i tuoi file!");
+            for (int i = 0; i < 5; i++) {
+
+                System.out.println((i + 1) + "." + arr[i].getTitle());
+            }
+           
+            System.out.println("=============");
+
+            choice = in.nextInt();
+            in.nextLine();
+        	
+        }
     }
 	}
 }

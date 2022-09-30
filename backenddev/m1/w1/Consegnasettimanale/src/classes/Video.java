@@ -10,17 +10,20 @@ public class Video extends ElementoMultimediale implements Brightness, Volume {
 	private int brightness;
 	private int volume;
 	private int time;
-	final protected String type;
 	
-	public Video(String title, int b, int v, int t){
-    	super(title);
+	
+	public Video(String title, int b, int v, int t, String type){
+    	super(title, type);
     	this.brightness = b;
     	this.volume=v;
     	this.time=t;
-    	this.type = "video";
+    	
     }
 	public String getType() {
 		return this.type;
+	}
+	public String toString() {
+		return "{" + type+ " : "+ title+" " +" minuti: "+time+ " volume: " + volume + " luminosità: "+ brightness+"}";
 	}
 
 

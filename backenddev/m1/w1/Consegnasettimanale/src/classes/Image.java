@@ -7,15 +7,18 @@ import interfacesAbstract.ElementoMultimediale;
 
 public class Image extends ElementoMultimediale implements Brightness {
 	private int brightness;
-	final protected String type;
 	
-	public Image(String title, int b){
-		super(title);
+	
+	public Image(String title, int b, String type){
+		super(title, type);
 		this.brightness = b;
-		this.type="image";
+		
 	}
 	public String getType() {
 		return this.type;
+	}
+	public String toString() {
+		return "{"+type+ " : "+ title+" luminosità: "+ brightness+"}";
 	}
 
 	@Override
