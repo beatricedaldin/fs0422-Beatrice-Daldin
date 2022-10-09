@@ -1,10 +1,11 @@
 package Classes;
 
 public abstract class Catalogue {
-	protected long isbn;
+	public long isbn;
 	protected String title;
-	protected int year;
+	public int year;
 	protected int pages;
+	public String author;
 	static long id = 1;
 
 	protected Catalogue(String title, int year, int pages) {
