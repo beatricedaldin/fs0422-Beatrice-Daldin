@@ -44,8 +44,9 @@ public class Archive {
 				System.out.println("Type the genre:");
 				String genre = s.nextLine().toLowerCase();
 				Book book = new Book(title, year, pages, author, genre);
-				catalogue.add(book);
 				b.add(book);
+				catalogue.add(book);
+				
 				continue;
 				
 			case 2:
