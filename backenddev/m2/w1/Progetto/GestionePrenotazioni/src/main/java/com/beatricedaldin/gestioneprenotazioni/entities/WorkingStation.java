@@ -43,6 +43,6 @@ public class WorkingStation {
 	@OneToOne(cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
 	@JoinColumn(name = "buildingId")
 	private Building building;
-	
+
 
 }

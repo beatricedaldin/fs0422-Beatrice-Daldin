@@ -21,7 +21,6 @@ import lombok.ToString;
 @Setter
 @Builder
 @ToString
-
 public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
